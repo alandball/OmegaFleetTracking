@@ -41,5 +41,13 @@ namespace Wil
             FleetTracking._frmVehicleManagerEdit.BringToFront();
             FleetTracking._frmVehicleManagerEdit.fillComboBox();
         }
+
+        private void buttonRemove_Click(object sender, EventArgs e)
+        {
+            FleetTracking._frmVehicleManagerRemove.Show();
+            FleetTracking._frmVehicleManagerRemove.BringToFront();
+            FleetTracking._frmVehicleManagerRemove.fillComboBox();
+
+        }
     }
 }
