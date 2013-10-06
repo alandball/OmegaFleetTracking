@@ -31,6 +31,8 @@ namespace Wil
         public static frmVehicleManager _frmVehicleManager = new frmVehicleManager();
         public static frmVehicleManagerHS _frmVehicleManagerHS = new frmVehicleManagerHS();
         public static frmVehicleManagerMenu _frmVehicleManagerMenu = new frmVehicleManagerMenu();
+        public static frmVehicleManagerEdit _frmVehicleManagerEdit = new frmVehicleManagerEdit();
+        public static frmVehicleManagerRemove _frmVehicleManagerRemove = new frmVehicleManagerRemove();
 
         public FleetTracking()
         {
@@ -76,7 +78,11 @@ namespace Wil
             panelMain.Controls.Add(_frmVehicleManagerHS);
             _frmVehicleManagerHS.Hide();
             panelMenu.Controls.Add(_frmVehicleManagerMenu);
-            _frmVehicleManagerMenu.Hide();            
+            _frmVehicleManagerMenu.Hide();
+            panelMain.Controls.Add(_frmVehicleManagerEdit);
+            _frmVehicleManagerEdit.Hide();
+            panelMain.Controls.Add(_frmVehicleManagerRemove);
+            _frmVehicleManagerEdit.Hide();   
         }
 
         private void mnuMain_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
