@@ -10,10 +10,18 @@ insert tblUserType values
 ('Mechanic', 'Fixes Trucks');
 
 insert tblUser values 
-('Henry', 'Le Roux', '0821456987', 'henry@email.com', 1)
+('User1', 'Surename1', '0821456987', 'name@email.com', 1),
+('User2', 'Surename2', '0821456987', 'name@email.com', 2),
+('User3', 'Surename3', '0821456987', 'name@email.com', 3),
+('User4', 'Surename4', '0821456987', 'name@email.com', 4),
+('User5', 'Surename5', '0821456987', 'name@email.com', 5)
 
 insert tblAuth values 
-('Admin','admin', 1)
+('Office','office', 1),
+('Vehicle','vehicle', 2),
+('Trip','trip', 3),
+('Service','service', 4),
+('Timesheet','timesheet', 5)
 
 insert tblCategory values 
 ('1A', 'Motorcycle'),
