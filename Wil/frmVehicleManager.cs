@@ -26,8 +26,6 @@ namespace Wil
 
             _DBAccess.Do_SQLQueryAlt(sGetCategories);
 
-            //MessageBox.Show(_DBAccess.dataTblAlt.Columns[0].ToString());
-
             comboBoxCategory.DataSource = _DBAccess.bndSrcAlt;
             comboBoxCategory.DisplayMember = "CatDesc"; //column you want to show in comboBox
             comboBoxCategory.ValueMember = "CatID"; //column you want to use in the background (not necessary)!
@@ -40,22 +38,20 @@ namespace Wil
 
             if(comboBoxTrailerOrVehicle.SelectedIndex == 0)
             {
-                sVehicleType = "tblVehicle";
+                sVehicleType = "0";
             }
             else
             {
-                sVehicleType = "tblTrailer";
+                sVehicleType = "1";
             }
 
-            
+            //MessageBox.Show(comboBoxCategory.SelectedValue.ToString());('" + textBoxRegNumber.Text + "', '"+textBoxVinNumber.Text+"', '"+textBoxVehicleDesc.Text+"', '', '0', 3)");
 
             string sInsertVehicle = String.Format(
-                    @"INSERT {0} VALUES
-                    ('{1}', '{2}', '{3}', '{4}', {5})", sVehicleType, textBoxRegNumber.Text, textBoxVinNumber.Text, textBoxVehicleDesc.Text, textBoxVehicleKm, comboBoxCategory.ValueMember);
+                    @"INSERT tblVehicle VALUES
+                    ('{0}', '{1}', '{2}', '{3}', '{4}', {5})", textBoxRegNumber.Text, textBoxVinNumber.Text, textBoxVehicleDesc.Text, textBoxVehicleKm.Text, sVehicleType, comboBoxCategory.SelectedValue);
 
-            _DBAccess.Do_SQLQuery(sInsertVehicle);
-
-
+           _DBAccess.Do_SQLQuery(sInsertVehicle);
 
         }
     }

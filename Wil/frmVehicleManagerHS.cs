@@ -16,17 +16,24 @@ namespace Wil
             InitializeComponent();
         }
         static DBAccess _DBAccess = new DBAccess();
+
         private void frmVehicleManagerHS_Load(object sender, EventArgs e)
         {
+            fillGridView();
+        }
+
+        public void fillGridView()
+        {
             string sGetVehicles = @"
-                        SELECT VehicleReg[Registration], VehicleVinNumber[Vin Number], VehicleDesc[Description], VehicleKm[KM], CatDesc[Category]
-                        FROM tblVehicle, tblCategory
-                        WHERE tblVehicle.CatID = tblCategory.CatID
+                        SELECT VehicleReg[Registration], VehicleVinNumber[Vin Number], VehicleDesc[Description], VehicleKm[KM], VehicleTypeName[VehicleType], CatDesc[Category]
+                        FROM tblVehicle, tblCategory, tblVehicleType
+                        WHERE tblVehicle.CatID = tblCategory.CatID AND tblVehicle.VehicleTypeID = tblVehicleType.VehicleTypeID
                         ";
 
             _DBAccess.Do_SQLQuery(sGetVehicles);
 
             gridViewAllVehicles.DataSource = _DBAccess.bndSrc;
+    
         }
     }
 }
