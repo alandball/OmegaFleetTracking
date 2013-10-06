@@ -33,7 +33,7 @@ namespace Wil
             }
             else
             {
-                _DBAccess.Do_SQLQuery("SELECT UserTypeID, AuthUserName, AuthPassword FROM tblAuth WHERE AuthUserName ='" + textBoxUserName.Text + "'");
+                _DBAccess.Do_SQLQuery("SELECT AuthID, AuthUserName, AuthPassword FROM tblAuth WHERE AuthUserName ='" + textBoxUserName.Text + "'");
 
                 if (_DBAccess.dataTbl.Rows.Count > 0)
                 {
@@ -41,7 +41,7 @@ namespace Wil
                     {
                         //MessageBox.Show("Login");
                         this.Hide();
-                        switch (int.Parse(_DBAccess.dataTbl.Rows[0]["UserTypeID"].ToString().Trim()))
+                        switch (int.Parse(_DBAccess.dataTbl.Rows[0]["AuthID"].ToString().Trim()))
                         {
                             // Check to see which user group you are in and then open the right controls.
                             case 1:
@@ -49,20 +49,20 @@ namespace Wil
                                 FleetTracking._frmOfficeManagerMenu.Show();
                                 break;
                             case 2:
-                                FleetTracking._frmOfficeManagerHS.Show();
-                                FleetTracking._frmOfficeManagerMenu.Show();
+                                FleetTracking._frmVehicleManagerHS.Show();
+                                FleetTracking._frmVehicleManagerMenu.Show();
                                 break;
                             case 3:
-                                FleetTracking._frmOfficeManagerHS.Show();
-                                FleetTracking._frmOfficeManagerMenu.Show();
+                                FleetTracking._frmTripManagerHS.Show();
+                                FleetTracking._frmTripManagerMenu.Show();
                                 break;
                             case 4:
-                                FleetTracking._frmOfficeManagerHS.Show();
-                                FleetTracking._frmOfficeManagerMenu.Show();
+                                FleetTracking._frmServiceManagerHS.Show();
+                                FleetTracking._frmServiceManagerMenu.Show();
                                 break;
                             case 5:
-                                FleetTracking._frmOfficeManagerHS.Show();
-                                FleetTracking._frmOfficeManagerMenu.Show();
+                                FleetTracking._frmTimeSheetManagerHS.Show();
+                                FleetTracking._frmTimeSheetManagerMenu.Show();
                                 break;
                         }
 
