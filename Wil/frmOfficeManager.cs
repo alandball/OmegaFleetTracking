@@ -26,11 +26,16 @@ namespace Wil
 
                 if (input)
                 {
-                    doSqlQ = String.Format(@"insert into tblUser values('{0}', '{1}', '{2}', '{3}', {4});", textBoxName.Text, textBoxSurname.Text, textBoxCellNumber.Text, textBoxEmail.Text, (comboBoxUserType.SelectedIndex + 1));
-                    doSQL.Do_SQLQuery(doSqlQ);
-
-
-                    MessageBox.Show( String.Format("User {0} was added successfully", textBoxName.Text));
+                    try
+                    {
+                        doSqlQ = String.Format(@"insert into tblUser values('{0}', '{1}', '{2}', '{3}', {4});", textBoxName.Text, textBoxSurname.Text, textBoxCellNumber.Text, textBoxEmail.Text, (comboBoxUserType.SelectedIndex + 1));
+                        doSQL.Do_SQLQuery(doSqlQ);
+                        MessageBox.Show( String.Format("User {0} was added successfully", textBoxName.Text));
+                    }
+                    catch(Exception eX)
+                    {
+                        MessageBox.Show("An error has occured: " + eX);
+                    }
                 }
                 else
                 {
@@ -64,6 +69,5 @@ namespace Wil
             else
                 return true;
         }
-
     }
 }
