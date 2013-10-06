@@ -157,11 +157,11 @@
             this.comboBoxUserType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxUserType.FormattingEnabled = true;
             this.comboBoxUserType.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
+            "Office Manager",
+            "Vehicle information administrator",
+            "Trip Manager",
+            "Service manager",
+            "Timesheet manager"});
             this.comboBoxUserType.Location = new System.Drawing.Point(233, 423);
             this.comboBoxUserType.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxUserType.Name = "comboBoxUserType";
