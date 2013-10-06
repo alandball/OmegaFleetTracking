@@ -12,6 +12,7 @@ TestResults
 *.suo
 *.user
 *.sln.docstates
+*Wil.csproj
 
 # Ignore the database file so we dont clash with changing names all the time
 *DBAccess.cs
