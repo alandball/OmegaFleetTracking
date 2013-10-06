@@ -13,6 +13,9 @@ TestResults
 *.user
 *.sln.docstates
 
+# Ignore the database file so we dont clash with changing names all the time
+*DBAccess.cs
+
 # Build results
 [Dd]ebug/
 [Rr]elease/
