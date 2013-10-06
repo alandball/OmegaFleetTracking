@@ -27,12 +27,19 @@ namespace Wil
         {
             FleetTracking._frmVehicleManagerHS.Show();
             FleetTracking._frmVehicleManagerHS.BringToFront();
-            
+            FleetTracking._frmVehicleManagerHS.fillGridView();
         }
 
         private void frmVehicleManagerMenu_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+            FleetTracking._frmVehicleManagerEdit.Show();
+            FleetTracking._frmVehicleManagerEdit.BringToFront();
+            FleetTracking._frmVehicleManagerEdit.fillComboBox();
         }
     }
 }
