@@ -154,6 +154,12 @@
     <Compile Include="frmVehicleManager.Designer.cs">
       <DependentUpon>frmVehicleManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVehicleManagerEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmVehicleManagerEdit.designer.cs">
+      <DependentUpon>frmVehicleManagerEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmVehicleManagerHS.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -167,6 +173,12 @@
       <DependentUpon>frmVehicleManagerMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="DBAccess.cs" />
+    <Compile Include="frmVehicleManagerRemove.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmVehicleManagerRemove.Designer.cs">
+      <DependentUpon>frmVehicleManagerRemove.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FleetTracking.resx">
@@ -223,11 +235,17 @@
     <EmbeddedResource Include="frmVehicleManager.resx">
       <DependentUpon>frmVehicleManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmVehicleManagerEdit.resx">
+      <DependentUpon>frmVehicleManagerEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmVehicleManagerHS.resx">
       <DependentUpon>frmVehicleManagerHS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVehicleManagerMenu.resx">
       <DependentUpon>frmVehicleManagerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVehicleManagerRemove.resx">
+      <DependentUpon>frmVehicleManagerRemove.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
