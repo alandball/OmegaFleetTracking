@@ -25,14 +25,14 @@ namespace Wil
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            if (true)
+            if (true)//Remove when project completed
             {
                 this.Hide();
                 FleetTracking._frmOfficeManagerHS.Show();
                 FleetTracking._frmOfficeManagerMenu.Show();
             }
-            else
-            {
+            else//remove this line
+            {//remove this line
                 _DBAccess.Do_SQLQuery("SELECT AuthID, AuthUserName, AuthPassword FROM tblAuth WHERE AuthUserName ='" + textBoxUserName.Text + "'");
 
                 if (_DBAccess.dataTbl.Rows.Count > 0)
@@ -78,7 +78,7 @@ namespace Wil
                 {
                     MessageBox.Show("Invalid Username");
                 }
-            }
+            }//remove this line
 
         }
     }
