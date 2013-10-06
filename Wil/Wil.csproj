@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{66973347-AE16-4F38-8B6A-F2C41C4CD183}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wil</RootNamespace>
+    <AssemblyName>Wil</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FleetTracking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FleetTracking.Designer.cs">
+      <DependentUpon>FleetTracking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOfficeManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmOfficeManager.Designer.cs">
+      <DependentUpon>frmOfficeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOfficeManagerHS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmOfficeManagerHS.Designer.cs">
+      <DependentUpon>frmOfficeManagerHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOfficeManagerMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmOfficeManagerMenu.Designer.cs">
+      <DependentUpon>frmOfficeManagerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiceManagerSS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmServiceManagerSS.Designer.cs">
+      <DependentUpon>frmServiceManagerSS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiceManagerHS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmServiceManagerHS.Designer.cs">
+      <DependentUpon>frmServiceManagerHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiceManagerMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmServiceManagerMenu.Designer.cs">
+      <DependentUpon>frmServiceManagerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimeSheetManagerAddEmp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmTimeSheetManagerAddEmp.Designer.cs">
+      <DependentUpon>frmTimeSheetManagerAddEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimeSheetManagerEnterHr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmTimeSheetManagerEnterHr.Designer.cs">
+      <DependentUpon>frmTimeSheetManagerEnterHr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimeSheetManagerHS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmTimeSheetManagerHS.Designer.cs">
+      <DependentUpon>frmTimeSheetManagerHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimeSheetManagerMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmTimeSheetManagerMenu.Designer.cs">
+      <DependentUpon>frmTimeSheetManagerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTripManagerSchT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmTripManagerSchT.Designer.cs">
+      <DependentUpon>frmTripManagerSchT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTripManagerHS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmTripManagerHS.Designer.cs">
+      <DependentUpon>frmTripManagerHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTripManagerMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmTripManagerMenu.Designer.cs">
+      <DependentUpon>frmTripManagerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTripManagerTripComp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmTripManagerTripComp.Designer.cs">
+      <DependentUpon>frmTripManagerTripComp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTripManagerTripIncidents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmTripManagerTripIncidents.Designer.cs">
+      <DependentUpon>frmTripManagerTripIncidents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVehicleManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmVehicleManager.Designer.cs">
+      <DependentUpon>frmVehicleManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVehicleManagerHS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmVehicleManagerHS.Designer.cs">
+      <DependentUpon>frmVehicleManagerHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVehicleManagerMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmVehicleManagerMenu.Designer.cs">
+      <DependentUpon>frmVehicleManagerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccess.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FleetTracking.resx">
+      <DependentUpon>FleetTracking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOfficeManager.resx">
+      <DependentUpon>frmOfficeManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOfficeManagerHS.resx">
+      <DependentUpon>frmOfficeManagerHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOfficeManagerMenu.resx">
+      <DependentUpon>frmOfficeManagerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServiceManagerSS.resx">
+      <DependentUpon>frmServiceManagerSS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServiceManagerHS.resx">
+      <DependentUpon>frmServiceManagerHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServiceManagerMenu.resx">
+      <DependentUpon>frmServiceManagerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimeSheetManagerAddEmp.resx">
+      <DependentUpon>frmTimeSheetManagerAddEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimeSheetManagerEnterHr.resx">
+      <DependentUpon>frmTimeSheetManagerEnterHr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimeSheetManagerHS.resx">
+      <DependentUpon>frmTimeSheetManagerHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimeSheetManagerMenu.resx">
+      <DependentUpon>frmTimeSheetManagerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTripManagerSchT.resx">
+      <DependentUpon>frmTripManagerSchT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTripManagerHS.resx">
+      <DependentUpon>frmTripManagerHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTripManagerMenu.resx">
+      <DependentUpon>frmTripManagerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTripManagerTripComp.resx">
+      <DependentUpon>frmTripManagerTripComp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTripManagerTripIncidents.resx">
+      <DependentUpon>frmTripManagerTripIncidents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVehicleManager.resx">
+      <DependentUpon>frmVehicleManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVehicleManagerHS.resx">
+      <DependentUpon>frmVehicleManagerHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVehicleManagerMenu.resx">
+      <DependentUpon>frmVehicleManagerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
