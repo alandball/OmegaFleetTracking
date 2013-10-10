@@ -58,11 +58,11 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmOfficeManager.cs">
+    <Compile Include="frmOfficeManager_AddUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="frmOfficeManager.Designer.cs">
-      <DependentUpon>frmOfficeManager.cs</DependentUpon>
+    <Compile Include="frmOfficeManager_AddUser.Designer.cs">
+      <DependentUpon>frmOfficeManager_AddUser.cs</DependentUpon>
     </Compile>
     <Compile Include="frmOfficeManagerHS.cs">
       <SubType>UserControl</SubType>
@@ -187,8 +187,8 @@
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmOfficeManager.resx">
-      <DependentUpon>frmOfficeManager.cs</DependentUpon>
+    <EmbeddedResource Include="frmOfficeManager_AddUser.resx">
+      <DependentUpon>frmOfficeManager_AddUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOfficeManagerHS.resx">
       <DependentUpon>frmOfficeManagerHS.cs</DependentUpon>

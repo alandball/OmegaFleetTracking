@@ -14,7 +14,7 @@ namespace Wil
     {
         public static frmLogin _frmLogin = new frmLogin();
         public static frmOfficeManagerHS _frmOfficeManagerHS = new frmOfficeManagerHS();
-        public static frmOfficeManager _frmOfficeManager = new frmOfficeManager();
+        public static frmOfficeManager_AddUser _frmOfficeManagerAddUser = new frmOfficeManager_AddUser();
         public static frmOfficeManagerMenu _frmOfficeManagerMenu = new frmOfficeManagerMenu();
         public static frmServiceManagerHS _frmServiceManagerHS = new frmServiceManagerHS();
         public static frmServiceManagerMenu _frmServiceManagerMenu = new frmServiceManagerMenu();
@@ -45,8 +45,8 @@ namespace Wil
             _frmLogin.Show();
             panelMain.Controls.Add(_frmOfficeManagerHS);
             _frmOfficeManagerHS.Hide();
-            panelMain.Controls.Add(_frmOfficeManager);
-            _frmOfficeManager.Hide();
+            panelMain.Controls.Add(_frmOfficeManagerAddUser);
+            _frmOfficeManagerAddUser.Hide();
             panelMenu.Controls.Add(_frmOfficeManagerMenu);
             _frmOfficeManagerMenu.Hide();
             panelMain.Controls.Add(_frmServiceManagerHS);

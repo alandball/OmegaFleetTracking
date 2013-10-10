@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Wil
 {
-    public partial class frmOfficeManager : UserControl
+    public partial class frmOfficeManager_AddUser : UserControl
     {
-        public frmOfficeManager()
+        public frmOfficeManager_AddUser()
         {
             InitializeComponent();
         }

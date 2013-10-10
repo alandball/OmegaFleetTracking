@@ -1,6 +1,6 @@
 ﻿namespace Wil
 {
-    partial class frmOfficeManager
+    partial class frmOfficeManager_AddUser
     {
         /// <summary> 
         /// Required designer variable.
