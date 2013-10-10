@@ -41,7 +41,7 @@
             this.buttonLogin.Location = new System.Drawing.Point(321, 361);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(75, 23);
-            this.buttonLogin.TabIndex = 11;
+            this.buttonLogin.TabIndex = 3;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = true;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
@@ -51,7 +51,7 @@
             this.buttonCancel.Location = new System.Drawing.Point(157, 361);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
-            this.buttonCancel.TabIndex = 10;
+            this.buttonCancel.TabIndex = 4;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
             // 
@@ -78,14 +78,16 @@
             this.textBoxPassword.Location = new System.Drawing.Point(228, 307);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(100, 20);
-            this.textBoxPassword.TabIndex = 7;
+            this.textBoxPassword.TabIndex = 2;
+            this.textBoxPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxPassword_KeyDown);
             // 
             // textBoxUserName
             // 
             this.textBoxUserName.Location = new System.Drawing.Point(228, 243);
             this.textBoxUserName.Name = "textBoxUserName";
             this.textBoxUserName.Size = new System.Drawing.Size(100, 20);
-            this.textBoxUserName.TabIndex = 6;
+            this.textBoxUserName.TabIndex = 1;
+            this.textBoxUserName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxUserName_KeyDown);
             // 
             // frmLogin
             // 

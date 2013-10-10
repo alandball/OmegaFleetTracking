@@ -69,5 +69,21 @@ namespace Wil
                 MessageBox.Show("Invalid Username");
             }
         }
+
+        private void textBoxUserName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                textBoxPassword.Focus();
+            }
+        }
+
+        private void textBoxPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonLogin_Click((object)sender, (EventArgs)e);
+            }
+        }
     }
 }
