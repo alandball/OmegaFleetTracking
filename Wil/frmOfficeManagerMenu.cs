@@ -29,8 +29,6 @@ namespace Wil
             FleetTracking._frmOfficeManager.buttonSubmit.Text = "Add User";
         }
 
-        
-
         private void buttonRemove_Click(object sender, EventArgs e)
         {
 

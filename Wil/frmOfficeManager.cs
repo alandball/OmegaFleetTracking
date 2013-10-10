@@ -15,7 +15,9 @@ namespace Wil
         {
             InitializeComponent();
         }
+
         DBAccess doSQL = new DBAccess();
+
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
             string doSqlQ;
@@ -28,7 +30,7 @@ namespace Wil
                 {
                     try
                     {
-                        doSqlQ = String.Format(@"insert into tblUser values('{0}', '{1}', '{2}', '{3}', {4});", textBoxName.Text, textBoxSurname.Text, textBoxCellNumber.Text, textBoxEmail.Text, (comboBoxUserType.SelectedIndex + 1));
+                        doSqlQ = String.Format(@"insert into tblUser values('{0}', '{1}', '{2}', '{3}', {4});", textBoxName.Text, textBoxLastName.Text, textBoxCellNumber.Text, textBoxEmail.Text, (comboBoxUserType.SelectedIndex + 1));
                         doSQL.Do_SQLQuery(doSqlQ);
                         MessageBox.Show( String.Format("User {0} was added successfully", textBoxName.Text));
                     }
@@ -50,7 +52,7 @@ namespace Wil
             {
                 return false;
             }
-            else if (textBoxSurname.Text.Equals(null) || textBoxSurname.Text.Length > 35)
+            else if (textBoxLastName.Text.Equals(null) || textBoxLastName.Text.Length > 35)
             {
                 return false;
             }
@@ -68,6 +70,14 @@ namespace Wil
             }
             else
                 return true;
+        }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            textBoxName.Text = "";
+            textBoxLastName.Text = "";
+            textBoxCellNumber.Text = "";
+            textBoxEmail.Text = "";
         }
     }
 }

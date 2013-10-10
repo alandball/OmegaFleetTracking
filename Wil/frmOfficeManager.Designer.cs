@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.textBoxName = new System.Windows.Forms.TextBox();
-            this.textBoxSurname = new System.Windows.Forms.TextBox();
+            this.textBoxLastName = new System.Windows.Forms.TextBox();
             this.textBoxCellNumber = new System.Windows.Forms.TextBox();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.labelName = new System.Windows.Forms.Label();
-            this.labelSurname = new System.Windows.Forms.Label();
+            this.labelLastName = new System.Windows.Forms.Label();
             this.labelCellNumber = new System.Windows.Forms.Label();
             this.labelEmail = new System.Windows.Forms.Label();
             this.labelUserType = new System.Windows.Forms.Label();
@@ -50,13 +50,13 @@
             this.textBoxName.Size = new System.Drawing.Size(175, 20);
             this.textBoxName.TabIndex = 2;
             // 
-            // textBoxSurname
+            // textBoxLastName
             // 
-            this.textBoxSurname.Location = new System.Drawing.Point(233, 175);
-            this.textBoxSurname.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxSurname.Name = "textBoxSurname";
-            this.textBoxSurname.Size = new System.Drawing.Size(175, 20);
-            this.textBoxSurname.TabIndex = 3;
+            this.textBoxLastName.Location = new System.Drawing.Point(233, 175);
+            this.textBoxLastName.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxLastName.Name = "textBoxLastName";
+            this.textBoxLastName.Size = new System.Drawing.Size(175, 20);
+            this.textBoxLastName.TabIndex = 3;
             // 
             // textBoxCellNumber
             // 
@@ -85,16 +85,16 @@
             this.labelName.TabIndex = 8;
             this.labelName.Text = "Name:";
             // 
-            // labelSurname
+            // labelLastName
             // 
-            this.labelSurname.AutoSize = true;
-            this.labelSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSurname.Location = new System.Drawing.Point(128, 176);
-            this.labelSurname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelSurname.Name = "labelSurname";
-            this.labelSurname.Size = new System.Drawing.Size(77, 17);
-            this.labelSurname.TabIndex = 9;
-            this.labelSurname.Text = "Surname:";
+            this.labelLastName.AutoSize = true;
+            this.labelLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLastName.Location = new System.Drawing.Point(128, 176);
+            this.labelLastName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelLastName.Name = "labelLastName";
+            this.labelLastName.Size = new System.Drawing.Size(90, 17);
+            this.labelLastName.TabIndex = 9;
+            this.labelLastName.Text = "Last Name:";
             // 
             // labelCellNumber
             // 
@@ -151,6 +151,7 @@
             this.buttonClear.TabIndex = 16;
             this.buttonClear.Text = "Clear";
             this.buttonClear.UseVisualStyleBackColor = true;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // comboBoxUserType
             // 
@@ -178,12 +179,12 @@
             this.Controls.Add(this.labelUserType);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.labelCellNumber);
-            this.Controls.Add(this.labelSurname);
+            this.Controls.Add(this.labelLastName);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.comboBoxUserType);
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.textBoxCellNumber);
-            this.Controls.Add(this.textBoxSurname);
+            this.Controls.Add(this.textBoxLastName);
             this.Controls.Add(this.textBoxName);
             this.Name = "frmOfficeManager";
             this.Size = new System.Drawing.Size(780, 656);
@@ -195,11 +196,11 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBoxName;
-        private System.Windows.Forms.TextBox textBoxSurname;
+        private System.Windows.Forms.TextBox textBoxLastName;
         private System.Windows.Forms.TextBox textBoxCellNumber;
         private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Label labelName;
-        private System.Windows.Forms.Label labelSurname;
+        private System.Windows.Forms.Label labelLastName;
         private System.Windows.Forms.Label labelCellNumber;
         private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.Label labelUserType;
