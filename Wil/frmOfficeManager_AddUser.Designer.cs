@@ -37,7 +37,7 @@
             this.labelCellNumber = new System.Windows.Forms.Label();
             this.labelEmail = new System.Windows.Forms.Label();
             this.labelUserType = new System.Windows.Forms.Label();
-            this.buttonSubmit = new System.Windows.Forms.Button();
+            this.buttonAddUser = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
             this.comboBoxUserType = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
@@ -129,17 +129,17 @@
             this.labelUserType.TabIndex = 14;
             this.labelUserType.Text = "User Type";
             // 
-            // buttonSubmit
+            // buttonAddUser
             // 
-            this.buttonSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSubmit.Location = new System.Drawing.Point(554, 295);
-            this.buttonSubmit.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonSubmit.Name = "buttonSubmit";
-            this.buttonSubmit.Size = new System.Drawing.Size(110, 60);
-            this.buttonSubmit.TabIndex = 15;
-            this.buttonSubmit.Text = "Submit";
-            this.buttonSubmit.UseVisualStyleBackColor = true;
-            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
+            this.buttonAddUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddUser.Location = new System.Drawing.Point(554, 295);
+            this.buttonAddUser.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAddUser.Name = "buttonAddUser";
+            this.buttonAddUser.Size = new System.Drawing.Size(110, 60);
+            this.buttonAddUser.TabIndex = 15;
+            this.buttonAddUser.Text = "Add User";
+            this.buttonAddUser.UseVisualStyleBackColor = true;
+            this.buttonAddUser.Click += new System.EventHandler(this.buttonAddUser_Click);
             // 
             // buttonClear
             // 
@@ -169,13 +169,13 @@
             this.comboBoxUserType.Size = new System.Drawing.Size(175, 21);
             this.comboBoxUserType.TabIndex = 7;
             // 
-            // frmOfficeManager
+            // frmOfficeManager_AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.buttonClear);
-            this.Controls.Add(this.buttonSubmit);
+            this.Controls.Add(this.buttonAddUser);
             this.Controls.Add(this.labelUserType);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.labelCellNumber);
@@ -186,7 +186,7 @@
             this.Controls.Add(this.textBoxCellNumber);
             this.Controls.Add(this.textBoxLastName);
             this.Controls.Add(this.textBoxName);
-            this.Name = "frmOfficeManager";
+            this.Name = "frmOfficeManager_AddUser";
             this.Size = new System.Drawing.Size(780, 656);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -204,9 +204,9 @@
         private System.Windows.Forms.Label labelCellNumber;
         private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.Label labelUserType;
-        public System.Windows.Forms.Button buttonSubmit;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.ComboBox comboBoxUserType;
+        public System.Windows.Forms.Button buttonAddUser;
 
     }
 }

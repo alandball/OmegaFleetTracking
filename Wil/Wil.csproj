@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmOfficeManager_Remove.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmOfficeManager_Remove.Designer.cs">
+      <DependentUpon>frmOfficeManager_Remove.cs</DependentUpon>
+    </Compile>
     <Compile Include="FleetTracking.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmOfficeManager_Remove.resx">
+      <DependentUpon>frmOfficeManager_Remove.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FleetTracking.resx">
       <DependentUpon>FleetTracking.cs</DependentUpon>
     </EmbeddedResource>

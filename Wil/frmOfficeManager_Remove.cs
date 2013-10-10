@@ -15,5 +15,23 @@ namespace Wil
         {
             InitializeComponent();
         }
+
+        DBAccess _DBAccess = new DBAccess();
+
+        private void frmOfficeManagerHS_Load(object sender, EventArgs e)
+        {
+
+            string sGetUsers = @"
+                        SELECT UserFirstName, UserLastName, UserCell, UserEmail, UserTypeName 
+                        FROM tblUser, tblUserType, tblAuth
+                        WHERE tblUser.UserID = tblAuth.UserID AND tblUserType.UserTypeID = tblUser.UserTypeID";
+
+            _DBAccess.Do_SQLQuery(sGetUsers);
+
+            gridViewAllUsers.DataSource = _DBAccess.bndSrc;
+            
+                
+        }
+
     }
 }

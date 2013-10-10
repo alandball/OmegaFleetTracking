@@ -18,11 +18,11 @@ namespace Wil
 
         DBAccess doSQL = new DBAccess();
 
-        private void buttonSubmit_Click(object sender, EventArgs e)
+        private void buttonAddUser_Click(object sender, EventArgs e)
         {
             string doSqlQ;
 
-            if (buttonSubmit.Text.CompareTo("Add User") == 0)
+            if (buttonAddUser.Text.CompareTo("Add User") == 0)
             {
                 bool input = checkInput();
 

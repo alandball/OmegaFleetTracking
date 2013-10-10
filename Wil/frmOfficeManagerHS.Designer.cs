@@ -52,6 +52,7 @@
             this.gridViewAllUsers.AllowUserToResizeRows = false;
             this.gridViewAllUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridViewAllUsers.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.gridViewAllUsers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridViewAllUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridViewAllUsers.Location = new System.Drawing.Point(50, 91);
             this.gridViewAllUsers.Margin = new System.Windows.Forms.Padding(2);
