@@ -14,7 +14,11 @@ insert tblUser values
 ('User2', 'Surename2', '0821456987', 'name@email.com', 2),
 ('User3', 'Surename3', '0821456987', 'name@email.com', 3),
 ('User4', 'Surename4', '0821456987', 'name@email.com', 4),
-('User5', 'Surename5', '0821456987', 'name@email.com', 5)
+('User5', 'Surename5', '0821456987', 'name@email.com', 5),
+('Driver1', 'Surename4', '0821456987', 'name@email.com', 6),
+('Driver2', 'Surename5', '0821456987', 'name@email.com', 6),
+('Mechanic1', 'Surename4', '0821456987', 'name@email.com', 7),
+('Mechanic2', 'Surename5', '0821456987', 'name@email.com', 7)
 
 insert tblAuth values 
 ('Office','office', 1),
@@ -47,3 +51,9 @@ insert tblVehicle values
 ('12345', '12345', 'Abnormal load', '12',1, 9),
 ('12345', '12345', 'Trailer 1', '32', 2, 7),
 ('12345', '12345', 'Trailer 2', '32', 2, 9)
+
+insert tblHours values
+(50, 11),
+(50, 12),
+(50, 13),
+(50, 14)

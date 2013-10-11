@@ -15,5 +15,24 @@ namespace Wil
         {
             InitializeComponent();
         }
+
+        private void buttonHome_Click(object sender, EventArgs e)
+        {
+            FleetTracking._frmTimeSheetManagerHS.Show();
+            FleetTracking._frmTimeSheetManagerHS.BringToFront();
+            FleetTracking._frmTimeSheetManagerHS.fillGridView();
+        }
+
+        private void buttonEnterHours_Click(object sender, EventArgs e)
+        {
+            FleetTracking._frmTimeSheetManagerEnterHr.Show();
+            FleetTracking._frmTimeSheetManagerEnterHr.BringToFront();
+        }
+
+        private void buttonAddEmp_Click(object sender, EventArgs e)
+        {
+            FleetTracking._frmTimeSheetManagerAddEmp.Show();
+            FleetTracking._frmTimeSheetManagerAddEmp.BringToFront();
+        }
     }
 }
