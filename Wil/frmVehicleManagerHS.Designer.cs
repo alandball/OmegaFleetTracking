@@ -46,10 +46,12 @@
             // 
             // gridViewAllVehicles
             // 
+            this.gridViewAllVehicles.AllowUserToAddRows = false;
+            this.gridViewAllVehicles.AllowUserToDeleteRows = false;
             this.gridViewAllVehicles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridViewAllVehicles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridViewAllVehicles.Location = new System.Drawing.Point(45, 110);
-            this.gridViewAllVehicles.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridViewAllVehicles.Margin = new System.Windows.Forms.Padding(2);
             this.gridViewAllVehicles.Name = "gridViewAllVehicles";
             this.gridViewAllVehicles.RowTemplate.Height = 24;
             this.gridViewAllVehicles.Size = new System.Drawing.Size(678, 496);
@@ -62,7 +64,7 @@
             this.Controls.Add(this.gridViewAllVehicles);
             this.Controls.Add(this.labelAllVehicles);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmVehicleManagerHS";
             this.Size = new System.Drawing.Size(780, 656);
             this.Load += new System.EventHandler(this.frmVehicleManagerHS_Load);
