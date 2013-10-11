@@ -11,6 +11,8 @@ namespace Wil
 {
     public partial class frmTripManagerTripIncidents : UserControl
     {
+        DBAccess _DBAccess = new DBAccess();
+
         public frmTripManagerTripIncidents()
         {
             InitializeComponent();
@@ -18,22 +20,24 @@ namespace Wil
 
         private void frmTripManagerTripIncidents_Load(object sender, EventArgs e)
         {
-            DBAccess _DBAccess = new DBAccess();
-
+            
             string sQuery = @"
-                        SELECT RTRIM(VehicleReg)[VehicleReg], VehicleID
-                        FROM tblVehicle";
+                        SELECT RTRIM(VehicleReg)[VehicleReg], tblScheduleLine.ScheduleLineID
+                        FROM tblVehicle, tblScheduleLine";
 
             _DBAccess.Do_SQLQuery(sQuery);
 
             comboBoxVehicleRegistrationNum.DataSource = _DBAccess.bndSrc;
             comboBoxVehicleRegistrationNum.DisplayMember = "VehicleReg"; //colum you want to show in comboBox
-            comboBoxVehicleRegistrationNum.ValueMember = "VehicleID"; //column you want to use in the background (not necessary)!
+            comboBoxVehicleRegistrationNum.ValueMember = "ScheduleLineID"; //column you want to use in the background (not necessary)!
         }
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
-          
+             string sQuery = @"
+                        INSERT tblIncident VALUES('" + textBoxNote.Text + "','" + comboBoxVehicleRegistrationNum.ValueMember + "')";
+
+            _DBAccess.Do_SQLQuery(sQuery);
 
         }
     }

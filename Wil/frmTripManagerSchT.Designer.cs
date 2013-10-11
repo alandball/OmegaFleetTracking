@@ -32,14 +32,14 @@
             this.datePickerDateOfArrival = new System.Windows.Forms.DateTimePicker();
             this.textBoxDestination = new System.Windows.Forms.TextBox();
             this.textBoxNotes = new System.Windows.Forms.TextBox();
-            this.comboBoxChooseID = new System.Windows.Forms.ComboBox();
             this.labelDateOfDeparture = new System.Windows.Forms.Label();
             this.labelDateOfArrival = new System.Windows.Forms.Label();
             this.labelDestination = new System.Windows.Forms.Label();
             this.labelNotes = new System.Windows.Forms.Label();
-            this.labelChooseID = new System.Windows.Forms.Label();
             this.buttonSubmit = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
+            this.labelChooseID = new System.Windows.Forms.Label();
+            this.comboBoxChooseID = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // datePickerDateOfDeparture
@@ -71,14 +71,6 @@
             this.textBoxNotes.Name = "textBoxNotes";
             this.textBoxNotes.Size = new System.Drawing.Size(256, 128);
             this.textBoxNotes.TabIndex = 3;
-            // 
-            // comboBoxChooseID
-            // 
-            this.comboBoxChooseID.FormattingEnabled = true;
-            this.comboBoxChooseID.Location = new System.Drawing.Point(401, 575);
-            this.comboBoxChooseID.Name = "comboBoxChooseID";
-            this.comboBoxChooseID.Size = new System.Drawing.Size(256, 24);
-            this.comboBoxChooseID.TabIndex = 4;
             // 
             // labelDateOfDeparture
             // 
@@ -120,16 +112,6 @@
             this.labelNotes.TabIndex = 8;
             this.labelNotes.Text = "Notes:";
             // 
-            // labelChooseID
-            // 
-            this.labelChooseID.AutoSize = true;
-            this.labelChooseID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelChooseID.Location = new System.Drawing.Point(187, 575);
-            this.labelChooseID.Name = "labelChooseID";
-            this.labelChooseID.Size = new System.Drawing.Size(103, 20);
-            this.labelChooseID.TabIndex = 9;
-            this.labelChooseID.Text = "Choose ID:";
-            // 
             // buttonSubmit
             // 
             this.buttonSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -139,6 +121,7 @@
             this.buttonSubmit.TabIndex = 10;
             this.buttonSubmit.Text = "Submit";
             this.buttonSubmit.UseVisualStyleBackColor = true;
+            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
             // buttonClear
             // 
@@ -149,6 +132,24 @@
             this.buttonClear.TabIndex = 11;
             this.buttonClear.Text = "Clear";
             this.buttonClear.UseVisualStyleBackColor = true;
+            // 
+            // labelChooseID
+            // 
+            this.labelChooseID.AutoSize = true;
+            this.labelChooseID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChooseID.Location = new System.Drawing.Point(187, 575);
+            this.labelChooseID.Name = "labelChooseID";
+            this.labelChooseID.Size = new System.Drawing.Size(103, 20);
+            this.labelChooseID.TabIndex = 9;
+            this.labelChooseID.Text = "Choose ID:";
+            // 
+            // comboBoxChooseID
+            // 
+            this.comboBoxChooseID.FormattingEnabled = true;
+            this.comboBoxChooseID.Location = new System.Drawing.Point(401, 575);
+            this.comboBoxChooseID.Name = "comboBoxChooseID";
+            this.comboBoxChooseID.Size = new System.Drawing.Size(256, 24);
+            this.comboBoxChooseID.TabIndex = 4;
             // 
             // frmTripManagerSchT
             // 
@@ -168,6 +169,7 @@
             this.Controls.Add(this.datePickerDateOfDeparture);
             this.Name = "frmTripManagerSchT";
             this.Size = new System.Drawing.Size(1040, 807);
+            this.Load += new System.EventHandler(this.frmTripManagerSchT_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,13 +181,13 @@
         private System.Windows.Forms.DateTimePicker datePickerDateOfArrival;
         private System.Windows.Forms.TextBox textBoxDestination;
         private System.Windows.Forms.TextBox textBoxNotes;
-        private System.Windows.Forms.ComboBox comboBoxChooseID;
         private System.Windows.Forms.Label labelDateOfDeparture;
         private System.Windows.Forms.Label labelDateOfArrival;
         private System.Windows.Forms.Label labelDestination;
         private System.Windows.Forms.Label labelNotes;
-        private System.Windows.Forms.Label labelChooseID;
         private System.Windows.Forms.Button buttonSubmit;
         private System.Windows.Forms.Button buttonClear;
+        private System.Windows.Forms.Label labelChooseID;
+        private System.Windows.Forms.ComboBox comboBoxChooseID;
     }
 }

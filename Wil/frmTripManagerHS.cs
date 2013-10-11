@@ -27,7 +27,7 @@ namespace Wil
         {
             DBAccess _DBAccess = new DBAccess();
             string sSchedule = @"
-                        SELECT tblScheduleTrip.Destination, tblScheduleTrip.DOD[Date Of Departure], tblScheduleTrip.DOA[Date Of Arrival], tblVehicle.VehicleReg[Vehicle Registration Number], tblUser.UserFirstName[Employee Name] 
+                        SELECT tblScheduleTrip.Destination, tblScheduleTrip.DOD[Date Of Departure], tblScheduleTrip.DOA[Date Of Arrival], tblScheduleTrip.Notes[Notes], tblUser.UserFirstName[Employee Name] 
                         FROM tblScheduleTrip, tblVehicle, tblUser, tblScheduleLine
                         WHERE tblScheduleTrip.UserID = tblUser.UserID 
                         AND tblVehicle.VehicleID = tblScheduleLine.VehicleID 

@@ -34,13 +34,19 @@
             this.buttonClear = new System.Windows.Forms.Button();
             this.comboBoxVehicleRegistrationNum = new System.Windows.Forms.ComboBox();
             this.labelVehicleRegistrationNum = new System.Windows.Forms.Label();
+            this.comboBoxDestination = new System.Windows.Forms.ComboBox();
+            this.labelDateOfDeparture = new System.Windows.Forms.Label();
+            this.datePickerDateOfDeparture = new System.Windows.Forms.DateTimePicker();
+            this.labelDestination = new System.Windows.Forms.Label();
+            this.labelDateOfArrival = new System.Windows.Forms.Label();
+            this.datePickerDateOfArrival = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // labelFuelUsage
             // 
             this.labelFuelUsage.AutoSize = true;
             this.labelFuelUsage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFuelUsage.Location = new System.Drawing.Point(132, 242);
+            this.labelFuelUsage.Location = new System.Drawing.Point(121, 366);
             this.labelFuelUsage.Name = "labelFuelUsage";
             this.labelFuelUsage.Size = new System.Drawing.Size(110, 20);
             this.labelFuelUsage.TabIndex = 0;
@@ -48,7 +54,7 @@
             // 
             // textBoxFuelUsage
             // 
-            this.textBoxFuelUsage.Location = new System.Drawing.Point(407, 242);
+            this.textBoxFuelUsage.Location = new System.Drawing.Point(393, 366);
             this.textBoxFuelUsage.Name = "textBoxFuelUsage";
             this.textBoxFuelUsage.Size = new System.Drawing.Size(135, 22);
             this.textBoxFuelUsage.TabIndex = 1;
@@ -62,6 +68,7 @@
             this.buttonSubmit.TabIndex = 16;
             this.buttonSubmit.Text = "Submit";
             this.buttonSubmit.UseVisualStyleBackColor = true;
+            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
             // buttonClear
             // 
@@ -76,7 +83,7 @@
             // comboBoxVehicleRegistrationNum
             // 
             this.comboBoxVehicleRegistrationNum.FormattingEnabled = true;
-            this.comboBoxVehicleRegistrationNum.Location = new System.Drawing.Point(407, 139);
+            this.comboBoxVehicleRegistrationNum.Location = new System.Drawing.Point(393, 299);
             this.comboBoxVehicleRegistrationNum.Name = "comboBoxVehicleRegistrationNum";
             this.comboBoxVehicleRegistrationNum.Size = new System.Drawing.Size(121, 24);
             this.comboBoxVehicleRegistrationNum.TabIndex = 18;
@@ -85,16 +92,74 @@
             // 
             this.labelVehicleRegistrationNum.AutoSize = true;
             this.labelVehicleRegistrationNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVehicleRegistrationNum.Location = new System.Drawing.Point(132, 139);
+            this.labelVehicleRegistrationNum.Location = new System.Drawing.Point(121, 299);
             this.labelVehicleRegistrationNum.Name = "labelVehicleRegistrationNum";
             this.labelVehicleRegistrationNum.Size = new System.Drawing.Size(256, 20);
             this.labelVehicleRegistrationNum.TabIndex = 19;
             this.labelVehicleRegistrationNum.Text = "Vehicle Registration Number:";
             // 
+            // comboBoxDestination
+            // 
+            this.comboBoxDestination.FormattingEnabled = true;
+            this.comboBoxDestination.Location = new System.Drawing.Point(393, 217);
+            this.comboBoxDestination.Name = "comboBoxDestination";
+            this.comboBoxDestination.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxDestination.TabIndex = 20;
+            // 
+            // labelDateOfDeparture
+            // 
+            this.labelDateOfDeparture.AutoSize = true;
+            this.labelDateOfDeparture.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDateOfDeparture.Location = new System.Drawing.Point(121, 100);
+            this.labelDateOfDeparture.Name = "labelDateOfDeparture";
+            this.labelDateOfDeparture.Size = new System.Drawing.Size(171, 20);
+            this.labelDateOfDeparture.TabIndex = 24;
+            this.labelDateOfDeparture.Text = "Date Of Departure:";
+            // 
+            // datePickerDateOfDeparture
+            // 
+            this.datePickerDateOfDeparture.Location = new System.Drawing.Point(393, 98);
+            this.datePickerDateOfDeparture.Name = "datePickerDateOfDeparture";
+            this.datePickerDateOfDeparture.Size = new System.Drawing.Size(200, 22);
+            this.datePickerDateOfDeparture.TabIndex = 25;
+            // 
+            // labelDestination
+            // 
+            this.labelDestination.AutoSize = true;
+            this.labelDestination.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDestination.Location = new System.Drawing.Point(121, 217);
+            this.labelDestination.Name = "labelDestination";
+            this.labelDestination.Size = new System.Drawing.Size(111, 20);
+            this.labelDestination.TabIndex = 26;
+            this.labelDestination.Text = "Destination:";
+            // 
+            // labelDateOfArrival
+            // 
+            this.labelDateOfArrival.AutoSize = true;
+            this.labelDateOfArrival.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDateOfArrival.Location = new System.Drawing.Point(121, 161);
+            this.labelDateOfArrival.Name = "labelDateOfArrival";
+            this.labelDateOfArrival.Size = new System.Drawing.Size(142, 20);
+            this.labelDateOfArrival.TabIndex = 27;
+            this.labelDateOfArrival.Text = "Date Of Arrival:";
+            // 
+            // datePickerDateOfArrival
+            // 
+            this.datePickerDateOfArrival.Location = new System.Drawing.Point(393, 161);
+            this.datePickerDateOfArrival.Name = "datePickerDateOfArrival";
+            this.datePickerDateOfArrival.Size = new System.Drawing.Size(200, 22);
+            this.datePickerDateOfArrival.TabIndex = 29;
+            // 
             // frmTripManagerTripComp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.datePickerDateOfArrival);
+            this.Controls.Add(this.labelDateOfArrival);
+            this.Controls.Add(this.labelDestination);
+            this.Controls.Add(this.datePickerDateOfDeparture);
+            this.Controls.Add(this.labelDateOfDeparture);
+            this.Controls.Add(this.comboBoxDestination);
             this.Controls.Add(this.labelVehicleRegistrationNum);
             this.Controls.Add(this.comboBoxVehicleRegistrationNum);
             this.Controls.Add(this.buttonClear);
@@ -103,6 +168,7 @@
             this.Controls.Add(this.labelFuelUsage);
             this.Name = "frmTripManagerTripComp";
             this.Size = new System.Drawing.Size(1040, 807);
+            this.Load += new System.EventHandler(this.frmTripManagerTripComp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,5 +182,11 @@
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.ComboBox comboBoxVehicleRegistrationNum;
         private System.Windows.Forms.Label labelVehicleRegistrationNum;
+        private System.Windows.Forms.ComboBox comboBoxDestination;
+        private System.Windows.Forms.Label labelDateOfDeparture;
+        private System.Windows.Forms.DateTimePicker datePickerDateOfDeparture;
+        private System.Windows.Forms.Label labelDestination;
+        private System.Windows.Forms.Label labelDateOfArrival;
+        private System.Windows.Forms.DateTimePicker datePickerDateOfArrival;
     }
 }
