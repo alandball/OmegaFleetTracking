@@ -16,16 +16,18 @@ namespace Wil
             InitializeComponent();
         }
 
-        
+        DBAccess _DBAccess = new DBAccess();
+        DBAccess _aDBAccess = new DBAccess();
+        DBAccess _bDBAccess = new DBAccess();
 
         private void frmTripManagerHS_Load(object sender, EventArgs e)
         {
             fillDataGrids();
         }
 
-        private void fillDataGrids()
+        public void fillDataGrids()
         {
-            DBAccess _DBAccess = new DBAccess();
+            
             string sSchedule = @"
                         SELECT tblScheduleTrip.Destination, tblScheduleTrip.DOD[Date Of Departure], tblScheduleTrip.DOA[Date Of Arrival], tblScheduleTrip.Notes[Notes], tblUser.UserFirstName[Employee Name] 
                         FROM tblScheduleTrip, tblVehicle, tblUser, tblScheduleLine
@@ -37,7 +39,7 @@ namespace Wil
 
             gridViewSchedule.DataSource = _DBAccess.bndSrc;
 
-            DBAccess _aDBAccess = new DBAccess();
+           
 
             string sIncidence = @"
                         SELECT tblIncident.Notes, tblVehicle.VehicleReg[Vehicle Registration Number], tblScheduleTrip.DOD[Date Of Departure]
@@ -50,7 +52,7 @@ namespace Wil
 
             gridViewIncidence.DataSource = _aDBAccess.bndSrc;
 
-            DBAccess _bDBAccess = new DBAccess();
+            
 
             string sTripCompleted = @"
                         SELECT tblScheduleTrip.Destination, tblScheduleTrip.DOD[Date Of Departure], tblScheduleTrip.DOA[Date Of Arrival], tblVehicle.VehicleReg[Vehicle Registration Number], tblPostTrip.FuelUsage[Fuel Usage]

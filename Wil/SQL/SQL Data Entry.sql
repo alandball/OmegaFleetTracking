@@ -53,7 +53,7 @@ insert tblVehicle values
 ('12345', '12345', 'Trailer 2', '32', 2, 9)
 
 insert tblHours values
-(50, 11),
-(50, 12),
-(50, 13),
-(50, 14)
+(50, 6),
+(50, 7),
+(50, 8),
+(50, 9)

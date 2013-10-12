@@ -22,7 +22,8 @@ namespace Wil
         {
             string sQuery = @"
                         SELECT RTRIM(UserID)[UserID], UserFirstName
-                        FROM tblUser";
+                        FROM tblUser
+                        WHERE UserTypeID = 6";
 
             _DBAccess.Do_SQLQuery(sQuery);
 

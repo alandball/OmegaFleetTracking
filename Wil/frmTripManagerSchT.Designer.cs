@@ -44,41 +44,46 @@
             // 
             // datePickerDateOfDeparture
             // 
-            this.datePickerDateOfDeparture.Location = new System.Drawing.Point(401, 109);
+            this.datePickerDateOfDeparture.Location = new System.Drawing.Point(301, 89);
+            this.datePickerDateOfDeparture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.datePickerDateOfDeparture.Name = "datePickerDateOfDeparture";
-            this.datePickerDateOfDeparture.Size = new System.Drawing.Size(200, 22);
+            this.datePickerDateOfDeparture.Size = new System.Drawing.Size(151, 20);
             this.datePickerDateOfDeparture.TabIndex = 0;
             // 
             // datePickerDateOfArrival
             // 
-            this.datePickerDateOfArrival.Location = new System.Drawing.Point(401, 205);
+            this.datePickerDateOfArrival.Location = new System.Drawing.Point(301, 167);
+            this.datePickerDateOfArrival.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.datePickerDateOfArrival.Name = "datePickerDateOfArrival";
-            this.datePickerDateOfArrival.Size = new System.Drawing.Size(200, 22);
+            this.datePickerDateOfArrival.Size = new System.Drawing.Size(151, 20);
             this.datePickerDateOfArrival.TabIndex = 1;
             // 
             // textBoxDestination
             // 
-            this.textBoxDestination.Location = new System.Drawing.Point(401, 292);
+            this.textBoxDestination.Location = new System.Drawing.Point(301, 237);
+            this.textBoxDestination.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxDestination.Multiline = true;
             this.textBoxDestination.Name = "textBoxDestination";
-            this.textBoxDestination.Size = new System.Drawing.Size(256, 69);
+            this.textBoxDestination.Size = new System.Drawing.Size(193, 57);
             this.textBoxDestination.TabIndex = 2;
             // 
             // textBoxNotes
             // 
-            this.textBoxNotes.Location = new System.Drawing.Point(401, 396);
+            this.textBoxNotes.Location = new System.Drawing.Point(301, 322);
+            this.textBoxNotes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxNotes.Multiline = true;
             this.textBoxNotes.Name = "textBoxNotes";
-            this.textBoxNotes.Size = new System.Drawing.Size(256, 128);
+            this.textBoxNotes.Size = new System.Drawing.Size(193, 105);
             this.textBoxNotes.TabIndex = 3;
             // 
             // labelDateOfDeparture
             // 
             this.labelDateOfDeparture.AutoSize = true;
             this.labelDateOfDeparture.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDateOfDeparture.Location = new System.Drawing.Point(187, 111);
+            this.labelDateOfDeparture.Location = new System.Drawing.Point(140, 90);
+            this.labelDateOfDeparture.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDateOfDeparture.Name = "labelDateOfDeparture";
-            this.labelDateOfDeparture.Size = new System.Drawing.Size(171, 20);
+            this.labelDateOfDeparture.Size = new System.Drawing.Size(147, 17);
             this.labelDateOfDeparture.TabIndex = 5;
             this.labelDateOfDeparture.Text = "Date Of Departure:";
             // 
@@ -86,9 +91,10 @@
             // 
             this.labelDateOfArrival.AutoSize = true;
             this.labelDateOfArrival.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDateOfArrival.Location = new System.Drawing.Point(187, 207);
+            this.labelDateOfArrival.Location = new System.Drawing.Point(140, 168);
+            this.labelDateOfArrival.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDateOfArrival.Name = "labelDateOfArrival";
-            this.labelDateOfArrival.Size = new System.Drawing.Size(142, 20);
+            this.labelDateOfArrival.Size = new System.Drawing.Size(121, 17);
             this.labelDateOfArrival.TabIndex = 6;
             this.labelDateOfArrival.Text = "Date Of Arrival:";
             // 
@@ -96,9 +102,10 @@
             // 
             this.labelDestination.AutoSize = true;
             this.labelDestination.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDestination.Location = new System.Drawing.Point(187, 292);
+            this.labelDestination.Location = new System.Drawing.Point(140, 237);
+            this.labelDestination.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDestination.Name = "labelDestination";
-            this.labelDestination.Size = new System.Drawing.Size(111, 20);
+            this.labelDestination.Size = new System.Drawing.Size(95, 17);
             this.labelDestination.TabIndex = 7;
             this.labelDestination.Text = "Destination:";
             // 
@@ -106,18 +113,20 @@
             // 
             this.labelNotes.AutoSize = true;
             this.labelNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNotes.Location = new System.Drawing.Point(187, 396);
+            this.labelNotes.Location = new System.Drawing.Point(140, 322);
+            this.labelNotes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNotes.Name = "labelNotes";
-            this.labelNotes.Size = new System.Drawing.Size(64, 20);
+            this.labelNotes.Size = new System.Drawing.Size(55, 17);
             this.labelNotes.TabIndex = 8;
             this.labelNotes.Text = "Notes:";
             // 
             // buttonSubmit
             // 
             this.buttonSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSubmit.Location = new System.Drawing.Point(83, 715);
+            this.buttonSubmit.Location = new System.Drawing.Point(62, 581);
+            this.buttonSubmit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonSubmit.Name = "buttonSubmit";
-            this.buttonSubmit.Size = new System.Drawing.Size(147, 74);
+            this.buttonSubmit.Size = new System.Drawing.Size(110, 60);
             this.buttonSubmit.TabIndex = 10;
             this.buttonSubmit.Text = "Submit";
             this.buttonSubmit.UseVisualStyleBackColor = true;
@@ -126,9 +135,10 @@
             // buttonClear
             // 
             this.buttonClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClear.Location = new System.Drawing.Point(264, 715);
+            this.buttonClear.Location = new System.Drawing.Point(198, 581);
+            this.buttonClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(147, 74);
+            this.buttonClear.Size = new System.Drawing.Size(110, 60);
             this.buttonClear.TabIndex = 11;
             this.buttonClear.Text = "Clear";
             this.buttonClear.UseVisualStyleBackColor = true;
@@ -137,23 +147,25 @@
             // 
             this.labelChooseID.AutoSize = true;
             this.labelChooseID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelChooseID.Location = new System.Drawing.Point(187, 575);
+            this.labelChooseID.Location = new System.Drawing.Point(140, 467);
+            this.labelChooseID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelChooseID.Name = "labelChooseID";
-            this.labelChooseID.Size = new System.Drawing.Size(103, 20);
+            this.labelChooseID.Size = new System.Drawing.Size(107, 17);
             this.labelChooseID.TabIndex = 9;
-            this.labelChooseID.Text = "Choose ID:";
+            this.labelChooseID.Text = "Select Driver:";
             // 
             // comboBoxChooseID
             // 
             this.comboBoxChooseID.FormattingEnabled = true;
-            this.comboBoxChooseID.Location = new System.Drawing.Point(401, 575);
+            this.comboBoxChooseID.Location = new System.Drawing.Point(301, 467);
+            this.comboBoxChooseID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxChooseID.Name = "comboBoxChooseID";
-            this.comboBoxChooseID.Size = new System.Drawing.Size(256, 24);
+            this.comboBoxChooseID.Size = new System.Drawing.Size(193, 21);
             this.comboBoxChooseID.TabIndex = 4;
             // 
             // frmTripManagerSchT
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.buttonSubmit);
@@ -167,8 +179,9 @@
             this.Controls.Add(this.textBoxDestination);
             this.Controls.Add(this.datePickerDateOfArrival);
             this.Controls.Add(this.datePickerDateOfDeparture);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmTripManagerSchT";
-            this.Size = new System.Drawing.Size(1040, 807);
+            this.Size = new System.Drawing.Size(780, 656);
             this.Load += new System.EventHandler(this.frmTripManagerSchT_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
