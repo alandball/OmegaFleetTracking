@@ -49,6 +49,8 @@
             this.gridViewAllVehicles.AllowUserToAddRows = false;
             this.gridViewAllVehicles.AllowUserToDeleteRows = false;
             this.gridViewAllVehicles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridViewAllVehicles.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.gridViewAllVehicles.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridViewAllVehicles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridViewAllVehicles.Location = new System.Drawing.Point(45, 110);
             this.gridViewAllVehicles.Margin = new System.Windows.Forms.Padding(2);

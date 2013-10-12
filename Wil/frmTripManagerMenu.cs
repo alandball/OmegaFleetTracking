@@ -18,7 +18,6 @@ namespace Wil
 
         private void buttonHome_Click(object sender, EventArgs e)
         {
-
             FleetTracking._frmTripManagerHS.Show();
             FleetTracking._frmTripManagerHS.BringToFront();
         }

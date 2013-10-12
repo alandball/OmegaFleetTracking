@@ -124,6 +124,12 @@
     <Compile Include="frmTimeSheetManagerMenu.Designer.cs">
       <DependentUpon>frmTimeSheetManagerMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTripManagerAddVehicle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmTripManagerAddVehicle.Designer.cs">
+      <DependentUpon>frmTripManagerAddVehicle.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTripManagerSchT.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -225,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTimeSheetManagerMenu.resx">
       <DependentUpon>frmTimeSheetManagerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTripManagerAddVehicle.resx">
+      <DependentUpon>frmTripManagerAddVehicle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTripManagerSchT.resx">
       <DependentUpon>frmTripManagerSchT.cs</DependentUpon>

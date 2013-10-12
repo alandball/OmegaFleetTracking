@@ -29,6 +29,7 @@ namespace Wil
         public static frmTripManagerSchT _frmTripManagerSchT = new frmTripManagerSchT();
         public static frmTripManagerTripComp _frmTripManagerTripComp = new frmTripManagerTripComp();
         public static frmTripManagerTripIncidents _frmTripManagerTripIncidents = new frmTripManagerTripIncidents();
+        public static frmTripManagerAddVehicle _frmTripManagerAddVehicle = new frmTripManagerAddVehicle();
         public static frmVehicleManager _frmVehicleManager = new frmVehicleManager();
         public static frmVehicleManagerHS _frmVehicleManagerHS = new frmVehicleManagerHS();
         public static frmVehicleManagerMenu _frmVehicleManagerMenu = new frmVehicleManagerMenu();
@@ -76,6 +77,8 @@ namespace Wil
             _frmTripManagerTripComp.Hide();
             panelMain.Controls.Add(_frmTripManagerTripIncidents);
             _frmTripManagerTripIncidents.Hide();
+            panelMain.Controls.Add(_frmTripManagerAddVehicle);
+            _frmTripManagerAddVehicle.Hide();
             panelMain.Controls.Add(_frmVehicleManager);
             _frmVehicleManager.Hide();
             panelMain.Controls.Add(_frmVehicleManagerHS);
