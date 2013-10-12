@@ -56,6 +56,7 @@ VehicleDesc char(100),
 VehicleKm char(10),
 VehicleTypeID int NOT NULL,
 CatID int NOT NULL,
+VehicleTrailerAttachable bit,
 FOREIGN KEY (VehicleTypeID) REFERENCES tblVehicleType(VehicleTypeID),
 FOREIGN KEY (CatID) REFERENCES tblCategory(CatID)
 )
