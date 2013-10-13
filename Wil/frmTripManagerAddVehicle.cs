@@ -51,8 +51,8 @@ namespace Wil
 
         private void buttonAddVehicle_Click(object sender, EventArgs e)
         {
-            string str = gridViewAllVehicles.Rows[gridViewAllVehicles.SelectedRows[0].Index].Cells["VehicleID"].Value.ToString();
-            MessageBox.Show(str);
+            //string str = gridViewAllVehicles.Rows[gridViewAllVehicles.SelectedRows[0].Index].Cells["VehicleID"].Value.ToString();
+            MessageBox.Show(gridViewAllVehicles.SelectedRows[0].Index.ToString());
             //string strDept = gridViewAllVehicles.DataSource[e.NewSelectedIndex]["PropertyName"];
             //FleetTracking._frmTripManagerSchT.storeVehicle.Add("asd");
         }
