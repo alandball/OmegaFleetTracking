@@ -37,6 +37,19 @@
             this.panelContainer = new System.Windows.Forms.Panel();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.MnuItmSwitchUser = new System.Windows.Forms.ToolStripMenuItem();
+            this.vehicleStatusReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.serviceListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.serviceRequirementsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.serviceCompletionReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.specificServiceReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.plannedTripReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.completeTripReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timesheetReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMain.SuspendLayout();
             this.panelContainer.SuspendLayout();
             this.SuspendLayout();
@@ -58,6 +71,9 @@
             // 
             // toolStripItemFile
             // 
+            this.toolStripItemFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MnuItmSwitchUser,
+            this.exitToolStripMenuItem});
             this.toolStripItemFile.Name = "toolStripItemFile";
             this.toolStripItemFile.Size = new System.Drawing.Size(37, 20);
             this.toolStripItemFile.Text = "File";
@@ -70,21 +86,35 @@
             // 
             // toolStripItemProfile
             // 
+            this.toolStripItemProfile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editProfileToolStripMenuItem});
             this.toolStripItemProfile.Name = "toolStripItemProfile";
             this.toolStripItemProfile.Size = new System.Drawing.Size(53, 20);
             this.toolStripItemProfile.Text = "Profile";
             // 
             // toolStripItemReport
             // 
+            this.toolStripItemReport.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.vehicleStatusReportToolStripMenuItem,
+            this.serviceListToolStripMenuItem,
+            this.serviceRequirementsToolStripMenuItem,
+            this.serviceCompletionReportToolStripMenuItem,
+            this.specificServiceReportToolStripMenuItem,
+            this.plannedTripReportToolStripMenuItem,
+            this.completeTripReportToolStripMenuItem,
+            this.timesheetReportToolStripMenuItem});
             this.toolStripItemReport.Name = "toolStripItemReport";
             this.toolStripItemReport.Size = new System.Drawing.Size(54, 20);
             this.toolStripItemReport.Text = "Report";
             // 
             // toolStripItemAbout
             // 
+            this.toolStripItemAbout.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewHelpToolStripMenuItem,
+            this.aboutToolStripMenuItem});
             this.toolStripItemAbout.Name = "toolStripItemAbout";
-            this.toolStripItemAbout.Size = new System.Drawing.Size(52, 20);
-            this.toolStripItemAbout.Text = "About";
+            this.toolStripItemAbout.Size = new System.Drawing.Size(44, 20);
+            this.toolStripItemAbout.Text = "Help";
             // 
             // panelContainer
             // 
@@ -115,6 +145,85 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(217, 656);
             this.panelMenu.TabIndex = 0;
+            // 
+            // MnuItmSwitchUser
+            // 
+            this.MnuItmSwitchUser.Name = "MnuItmSwitchUser";
+            this.MnuItmSwitchUser.Size = new System.Drawing.Size(152, 22);
+            this.MnuItmSwitchUser.Text = "Switch User";
+            this.MnuItmSwitchUser.Click += new System.EventHandler(this.MnuItmSwitchUser_Click);
+            // 
+            // vehicleStatusReportToolStripMenuItem
+            // 
+            this.vehicleStatusReportToolStripMenuItem.Name = "vehicleStatusReportToolStripMenuItem";
+            this.vehicleStatusReportToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.vehicleStatusReportToolStripMenuItem.Text = "Vehicle Status Report";
+            // 
+            // serviceListToolStripMenuItem
+            // 
+            this.serviceListToolStripMenuItem.Name = "serviceListToolStripMenuItem";
+            this.serviceListToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.serviceListToolStripMenuItem.Text = "Service List Report";
+            // 
+            // serviceRequirementsToolStripMenuItem
+            // 
+            this.serviceRequirementsToolStripMenuItem.Name = "serviceRequirementsToolStripMenuItem";
+            this.serviceRequirementsToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.serviceRequirementsToolStripMenuItem.Text = "Service Requirements Report";
+            // 
+            // serviceCompletionReportToolStripMenuItem
+            // 
+            this.serviceCompletionReportToolStripMenuItem.Name = "serviceCompletionReportToolStripMenuItem";
+            this.serviceCompletionReportToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.serviceCompletionReportToolStripMenuItem.Text = "Service Completion Report";
+            // 
+            // specificServiceReportToolStripMenuItem
+            // 
+            this.specificServiceReportToolStripMenuItem.Name = "specificServiceReportToolStripMenuItem";
+            this.specificServiceReportToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.specificServiceReportToolStripMenuItem.Text = "Specific Service Report";
+            // 
+            // plannedTripReportToolStripMenuItem
+            // 
+            this.plannedTripReportToolStripMenuItem.Name = "plannedTripReportToolStripMenuItem";
+            this.plannedTripReportToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.plannedTripReportToolStripMenuItem.Text = "Planned Trip Report";
+            // 
+            // completeTripReportToolStripMenuItem
+            // 
+            this.completeTripReportToolStripMenuItem.Name = "completeTripReportToolStripMenuItem";
+            this.completeTripReportToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.completeTripReportToolStripMenuItem.Text = "Complete Trip Report";
+            // 
+            // timesheetReportToolStripMenuItem
+            // 
+            this.timesheetReportToolStripMenuItem.Name = "timesheetReportToolStripMenuItem";
+            this.timesheetReportToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.timesheetReportToolStripMenuItem.Text = "Timesheet Report";
+            // 
+            // editProfileToolStripMenuItem
+            // 
+            this.editProfileToolStripMenuItem.Name = "editProfileToolStripMenuItem";
+            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.editProfileToolStripMenuItem.Text = "Edit Profile";
+            // 
+            // viewHelpToolStripMenuItem
+            // 
+            this.viewHelpToolStripMenuItem.Name = "viewHelpToolStripMenuItem";
+            this.viewHelpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.viewHelpToolStripMenuItem.Text = "View Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
             // 
             // FleetTracking
             // 
@@ -148,6 +257,19 @@
         private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.ToolStripMenuItem MnuItmSwitchUser;
+        private System.Windows.Forms.ToolStripMenuItem vehicleStatusReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem serviceListToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem serviceRequirementsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem serviceCompletionReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem specificServiceReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem plannedTripReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem completeTripReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem timesheetReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editProfileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewHelpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
 
