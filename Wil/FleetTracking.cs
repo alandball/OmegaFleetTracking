@@ -106,5 +106,35 @@ namespace Wil
         {
             //Application.Run(new MainWindow(doLogin));
         }
+
+        private void MnuItmSwitchUser_Click(object sender, EventArgs e)
+        {
+            _frmOfficeManagerHS.Hide();
+            _frmOfficeManagerAddUser.Hide();
+            _frmOfficeManager_Remove.Hide();
+            _frmOfficeManagerMenu.Hide();
+            _frmServiceManagerHS.Hide();
+            _frmServiceManagerMenu.Hide();
+            _frmServiceManagerSS.Hide();
+            _frmTimeSheetManagerAddEmp.Hide();
+            _frmTimeSheetManagerEnterHr.Hide();
+            _frmTimeSheetManagerHS.Hide();
+            _frmTimeSheetManagerMenu.Hide();
+            _frmTripManagerHS.Hide();
+            _frmTripManagerMenu.Hide();
+            _frmTripManagerSchT.Hide();
+            _frmTripManagerTripComp.Hide();
+            _frmTripManagerTripIncidents.Hide();
+            _frmTripManagerAddVehicle.Hide();
+            _frmVehicleManager.Hide();
+            _frmVehicleManagerHS.Hide();
+            _frmVehicleManagerMenu.Hide();
+            _frmVehicleManagerEdit.Hide();
+            _frmVehicleManagerEdit.Hide();   
+                
+            _frmLogin.Show();
+            _frmLogin.BringToFront();
+
+        }
     }
 }
