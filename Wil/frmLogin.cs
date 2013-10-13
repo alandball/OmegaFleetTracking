@@ -58,6 +58,8 @@ namespace Wil
                             break;
                     }
                     _DBAccess.dataTbl.Clear();
+                    textBoxPassword.Clear();
+                    textBoxUserName.Clear();
                 }
                 else
                 {
