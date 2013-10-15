@@ -26,24 +26,28 @@ namespace Wil
         public void fillGridView()
         {
             string sGetVehicles = @"
-                        SELECT VehicleReg[Registration], VehicleDesc[Description], VehicleTypeName[VehicleType], CatDesc[Category]
+                        SELECT VehicleID, VehicleReg[Registration], VehicleDesc[Description], VehicleTypeName[VehicleType], CatDesc[Category]
                         FROM tblVehicle, tblCategory, tblVehicleType
                         WHERE tblVehicle.CatID = tblCategory.CatID AND tblVehicle.VehicleTypeID = tblVehicleType.VehicleTypeID 
-                        AND tblVehicleType.VehicleTypeID = 1";
+                        AND tblVehicleType.VehicleTypeID = 1
+                        ";
 
             _DBAccess.Do_SQLQuery(sGetVehicles);
 
             gridViewAllVehicles.DataSource = _DBAccess.bndSrc;
+            gridViewAllVehicles.Columns["VehicleID"].Visible = false;
 
             sGetVehicles = @"
-                        SELECT VehicleReg[Registration], VehicleDesc[Description], VehicleTypeName[VehicleType], CatDesc[Category]
+                        SELECT VehicleID, VehicleReg[Registration], VehicleDesc[Description], VehicleTypeName[VehicleType], CatDesc[Category]
                         FROM tblVehicle, tblCategory, tblVehicleType
                         WHERE tblVehicle.CatID = tblCategory.CatID AND tblVehicle.VehicleTypeID = tblVehicleType.VehicleTypeID 
-                        AND tblVehicleType.VehicleTypeID = 2";
+                        AND tblVehicleType.VehicleTypeID = 2
+                        ";
 
             _DBAccess.Do_SQLQueryAlt(sGetVehicles);
 
             gridViewAllTrailers.DataSource = _DBAccess.bndSrcAlt;
+            gridViewAllTrailers.Columns["VehicleID"].Visible = false;
 
         }
 
@@ -53,15 +57,7 @@ namespace Wil
             int rowindex = gridViewAllVehicles.CurrentCell.RowIndex; // gets the row
             int columnindex = gridViewAllVehicles.CurrentCell.ColumnIndex; // gets the column
 
-            //MessageBox.Show(rowindex.ToString());
-            //MessageBox.Show(columnindex.ToString());
-
-            MessageBox.Show(gridViewAllVehicles.Rows[rowindex].Cells[columnindex].Value.ToString()); // gets the value in that row and column. So 1 - 1 or vehicle registration
-
-            //string str = gridViewAllVehicles.Rows[gridViewAllVehicles.SelectedRows[0].Index].Cells["VehicleID"].Value.ToString();
-            //MessageBox.Show(gridViewAllVehicles.SelectedRows[0].Index.ToString());
-            //string strDept = gridViewAllVehicles.DataSource[e.NewSelectedIndex]["PropertyName"];
-            //FleetTracking._frmTripManagerSchT.storeVehicle.Add("asd");
+            MessageBox.Show(gridViewAllVehicles.Rows[rowindex].Cells[0].Value.ToString()); // gets the value in that row and column. So 1 - 1 or vehicle registration
         }
 
         private void button1_Click(object sender, EventArgs e)
