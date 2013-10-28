@@ -30,6 +30,7 @@
         {
             this.labelAllUsers = new System.Windows.Forms.Label();
             this.gridViewAllUsers = new System.Windows.Forms.DataGridView();
+            this.buttonAddUser = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewAllUsers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,15 +62,28 @@
             this.gridViewAllUsers.Size = new System.Drawing.Size(675, 258);
             this.gridViewAllUsers.TabIndex = 1;
             // 
-            // frmOfficeManagerHS
+            // buttonAddUser
+            // 
+            this.buttonAddUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddUser.Location = new System.Drawing.Point(317, 353);
+            this.buttonAddUser.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAddUser.Name = "buttonAddUser";
+            this.buttonAddUser.Size = new System.Drawing.Size(121, 60);
+            this.buttonAddUser.TabIndex = 16;
+            this.buttonAddUser.Text = "Remove user";
+            this.buttonAddUser.UseVisualStyleBackColor = true;
+            this.buttonAddUser.Click += new System.EventHandler(this.buttonAddUser_Click);
+            // 
+            // frmOfficeManager_Remove
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonAddUser);
             this.Controls.Add(this.gridViewAllUsers);
             this.Controls.Add(this.labelAllUsers);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "frmOfficeManagerHS";
+            this.Name = "frmOfficeManager_Remove";
             this.Size = new System.Drawing.Size(780, 656);
             this.Load += new System.EventHandler(this.frmOfficeManagerHS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridViewAllUsers)).EndInit();
@@ -82,5 +96,6 @@
 
         private System.Windows.Forms.Label labelAllUsers;
         private System.Windows.Forms.DataGridView gridViewAllUsers;
+        public System.Windows.Forms.Button buttonAddUser;
     }
 }
