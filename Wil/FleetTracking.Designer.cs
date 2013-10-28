@@ -30,14 +30,12 @@
         {
             this.mnuMain = new System.Windows.Forms.MenuStrip();
             this.toolStripItemFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuItmSwitchUser = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripItemEdit = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripItemProfile = new System.Windows.Forms.ToolStripMenuItem();
+            this.editProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripItemReport = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripItemAbout = new System.Windows.Forms.ToolStripMenuItem();
-            this.panelContainer = new System.Windows.Forms.Panel();
-            this.panelMain = new System.Windows.Forms.Panel();
-            this.panelMenu = new System.Windows.Forms.Panel();
-            this.MnuItmSwitchUser = new System.Windows.Forms.ToolStripMenuItem();
             this.vehicleStatusReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.serviceListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.serviceRequirementsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,10 +44,12 @@
             this.plannedTripReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.completeTripReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timesheetReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripItemAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.viewHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelContainer = new System.Windows.Forms.Panel();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.panelMenu = new System.Windows.Forms.Panel();
             this.mnuMain.SuspendLayout();
             this.panelContainer.SuspendLayout();
             this.SuspendLayout();
@@ -64,7 +64,7 @@
             this.toolStripItemAbout});
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
-            this.mnuMain.Size = new System.Drawing.Size(1008, 24);
+            this.mnuMain.Size = new System.Drawing.Size(991, 24);
             this.mnuMain.TabIndex = 0;
             this.mnuMain.Text = "menuStrip1";
             this.mnuMain.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.mnuMain_ItemClicked);
@@ -77,6 +77,19 @@
             this.toolStripItemFile.Name = "toolStripItemFile";
             this.toolStripItemFile.Size = new System.Drawing.Size(37, 20);
             this.toolStripItemFile.Text = "File";
+            // 
+            // MnuItmSwitchUser
+            // 
+            this.MnuItmSwitchUser.Name = "MnuItmSwitchUser";
+            this.MnuItmSwitchUser.Size = new System.Drawing.Size(135, 22);
+            this.MnuItmSwitchUser.Text = "Switch User";
+            this.MnuItmSwitchUser.Click += new System.EventHandler(this.MnuItmSwitchUser_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
             // 
             // toolStripItemEdit
             // 
@@ -92,6 +105,12 @@
             this.toolStripItemProfile.Size = new System.Drawing.Size(53, 20);
             this.toolStripItemProfile.Text = "Profile";
             // 
+            // editProfileToolStripMenuItem
+            // 
+            this.editProfileToolStripMenuItem.Name = "editProfileToolStripMenuItem";
+            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.editProfileToolStripMenuItem.Text = "Edit Profile";
+            // 
             // toolStripItemReport
             // 
             this.toolStripItemReport.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -106,52 +125,6 @@
             this.toolStripItemReport.Name = "toolStripItemReport";
             this.toolStripItemReport.Size = new System.Drawing.Size(54, 20);
             this.toolStripItemReport.Text = "Report";
-            // 
-            // toolStripItemAbout
-            // 
-            this.toolStripItemAbout.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viewHelpToolStripMenuItem,
-            this.aboutToolStripMenuItem});
-            this.toolStripItemAbout.Name = "toolStripItemAbout";
-            this.toolStripItemAbout.Size = new System.Drawing.Size(44, 20);
-            this.toolStripItemAbout.Text = "Help";
-            // 
-            // panelContainer
-            // 
-            this.panelContainer.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panelContainer.BackColor = System.Drawing.SystemColors.Control;
-            this.panelContainer.Controls.Add(this.panelMain);
-            this.panelContainer.Controls.Add(this.panelMenu);
-            this.panelContainer.ForeColor = System.Drawing.Color.White;
-            this.panelContainer.Location = new System.Drawing.Point(0, 27);
-            this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(1008, 701);
-            this.panelContainer.TabIndex = 1;
-            // 
-            // panelMain
-            // 
-            this.panelMain.BackColor = System.Drawing.SystemColors.Control;
-            this.panelMain.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelMain.Location = new System.Drawing.Point(225, 2);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(780, 656);
-            this.panelMain.TabIndex = 1;
-            // 
-            // panelMenu
-            // 
-            this.panelMenu.BackColor = System.Drawing.SystemColors.Control;
-            this.panelMenu.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelMenu.Location = new System.Drawing.Point(2, 2);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(217, 656);
-            this.panelMenu.TabIndex = 0;
-            // 
-            // MnuItmSwitchUser
-            // 
-            this.MnuItmSwitchUser.Name = "MnuItmSwitchUser";
-            this.MnuItmSwitchUser.Size = new System.Drawing.Size(152, 22);
-            this.MnuItmSwitchUser.Text = "Switch User";
-            this.MnuItmSwitchUser.Click += new System.EventHandler(this.MnuItmSwitchUser_Click);
             // 
             // vehicleStatusReportToolStripMenuItem
             // 
@@ -201,35 +174,64 @@
             this.timesheetReportToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
             this.timesheetReportToolStripMenuItem.Text = "Timesheet Report";
             // 
-            // editProfileToolStripMenuItem
+            // toolStripItemAbout
             // 
-            this.editProfileToolStripMenuItem.Name = "editProfileToolStripMenuItem";
-            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.editProfileToolStripMenuItem.Text = "Edit Profile";
+            this.toolStripItemAbout.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewHelpToolStripMenuItem,
+            this.aboutToolStripMenuItem});
+            this.toolStripItemAbout.Name = "toolStripItemAbout";
+            this.toolStripItemAbout.Size = new System.Drawing.Size(44, 20);
+            this.toolStripItemAbout.Text = "Help";
             // 
             // viewHelpToolStripMenuItem
             // 
             this.viewHelpToolStripMenuItem.Name = "viewHelpToolStripMenuItem";
-            this.viewHelpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.viewHelpToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.viewHelpToolStripMenuItem.Text = "View Help";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // exitToolStripMenuItem
+            // panelContainer
             // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
+            this.panelContainer.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panelContainer.BackColor = System.Drawing.SystemColors.Control;
+            this.panelContainer.Controls.Add(this.panelMain);
+            this.panelContainer.Controls.Add(this.panelMenu);
+            this.panelContainer.ForeColor = System.Drawing.Color.White;
+            this.panelContainer.Location = new System.Drawing.Point(-9, 27);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(1008, 701);
+            this.panelContainer.TabIndex = 1;
+            // 
+            // panelMain
+            // 
+            this.panelMain.BackColor = System.Drawing.SystemColors.Control;
+            this.panelMain.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panelMain.Location = new System.Drawing.Point(225, 2);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(780, 656);
+            this.panelMain.TabIndex = 1;
+            // 
+            // panelMenu
+            // 
+            this.panelMenu.BackColor = System.Drawing.SystemColors.Control;
+            this.panelMenu.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panelMenu.Location = new System.Drawing.Point(2, 2);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(217, 656);
+            this.panelMenu.TabIndex = 0;
             // 
             // FleetTracking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 689);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(1008, 581);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.mnuMain);
             this.ForeColor = System.Drawing.SystemColors.ControlText;

@@ -136,5 +136,10 @@ namespace Wil
             _frmLogin.BringToFront();
 
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

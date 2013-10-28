@@ -50,10 +50,42 @@ insert tblVehicle values
 ('12345', '12345', '18 Wheeler', '32', 1, 7, 1),
 ('12345', '12345', 'Abnormal load', '12',1, 9, 1),
 ('12345', '12345', 'Trailer 1', '32', 2, 7, 0),
-('12345', '12345', 'Trailer 2', '32', 2, 9, 1)
+('12345', '12345', 'Trailer 2', '32', 2, 9, 1),
+('43242', '23432', 'Dump truck', '344123', 1, 6, 0 )
 
 insert tblHours values
 (50, 6),
 (50, 7),
 (50, 8),
 (50, 9)
+
+insert into tblScheduleTrip values
+('5 November 2013', '12 November 2013', 7, 'Johannesburg', 'Lumber'),
+('8 November 2013', '10 November 2013', 6, 'Cape-Town', 'Ammunition'),
+('11 November 2013', '12 November 2013', 6, 'Witbank', 'Tires'),
+('18 October 2013', '20 October 2013', 7, 'Mooi River', 'Package delivery')
+
+insert into tblScheduleLine values
+(5, 1),
+(7, 1),
+(6, 2),
+(8, 2),
+(9, 3),
+(2, 4)
+
+
+insert into tblIncident values
+('Tire blowout point 12 tire 2, replaced', 2),
+('Fuel refill', 1),
+('Fuel refill', 5)
+
+insert into tblService values
+('29 October 2013', '122', 9, 'Service brakes'),
+('28 October 2013', '110', 4, 'Service Cement mixer'),
+('30 October 2013', '122', 3, 'Service brakes')
+
+insert into tblPostTrip values
+(1, 162),
+(2, 103),
+(3, 42),
+(4, 15)
