@@ -31,7 +31,6 @@ namespace Wil
             {
                 if (textBoxPassword.Text.Equals(_DBAccess.dataTbl.Rows[0]["AuthPassword"].ToString().Trim()))
                 {
-                    //MessageBox.Show("Login");
                     this.Hide();
                     switch (int.Parse(_DBAccess.dataTbl.Rows[0]["AuthID"].ToString().Trim()))
                     {
@@ -58,8 +57,8 @@ namespace Wil
                             break;
                     }
                     _DBAccess.dataTbl.Clear();
-                    textBoxPassword.Clear();
-                    textBoxUserName.Clear();
+                    textBoxPassword.Clear();// unnecessary
+                    textBoxUserName.Clear();// unnecessary as login gets hidden, move this to if login failed? not really wanted either, perhaps just clear the password textbox
                 }
                 else
                 {

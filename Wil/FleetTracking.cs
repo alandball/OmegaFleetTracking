@@ -41,8 +41,9 @@ namespace Wil
             InitializeComponent();            
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void FleetTracking_Load(object sender, EventArgs e)
         {
+            //this is rediculous, change to addrange by creating an array of the panels. in properties set all controls to show false
             panelMain.Controls.Add(_frmLogin);
             _frmLogin.Show();
             panelMain.Controls.Add(_frmOfficeManagerHS);

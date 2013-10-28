@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.buttonAddVehicle = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonAddTrailer = new System.Windows.Forms.Button();
             this.gridViewAllVehicles = new System.Windows.Forms.DataGridView();
             this.gridViewAllTrailers = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewAllVehicles)).BeginInit();
@@ -48,17 +48,17 @@
             this.buttonAddVehicle.UseVisualStyleBackColor = true;
             this.buttonAddVehicle.Click += new System.EventHandler(this.buttonAddVehicle_Click);
             // 
-            // button1
+            // buttonAddTrailer
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(295, 554);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 60);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Add a Trailer";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonAddTrailer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddTrailer.Location = new System.Drawing.Point(295, 554);
+            this.buttonAddTrailer.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAddTrailer.Name = "buttonAddTrailer";
+            this.buttonAddTrailer.Size = new System.Drawing.Size(173, 60);
+            this.buttonAddTrailer.TabIndex = 14;
+            this.buttonAddTrailer.Text = "Add a Trailer";
+            this.buttonAddTrailer.UseVisualStyleBackColor = true;
+            this.buttonAddTrailer.Click += new System.EventHandler(this.buttonAddTrailer_Click);
             // 
             // gridViewAllVehicles
             // 
@@ -96,7 +96,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gridViewAllTrailers);
             this.Controls.Add(this.gridViewAllVehicles);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonAddTrailer);
             this.Controls.Add(this.buttonAddVehicle);
             this.Name = "frmTripManagerAddVehicle";
             this.Size = new System.Drawing.Size(780, 656);
@@ -110,7 +110,7 @@
         #endregion
 
         private System.Windows.Forms.Button buttonAddVehicle;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonAddTrailer;
         private System.Windows.Forms.DataGridView gridViewAllVehicles;
         private System.Windows.Forms.DataGridView gridViewAllTrailers;
 

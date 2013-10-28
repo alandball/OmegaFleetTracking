@@ -237,7 +237,7 @@
             this.Name = "FleetTracking";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Omega Technologies Fleet Tracking";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.FleetTracking_Load);
             this.mnuMain.ResumeLayout(false);
             this.mnuMain.PerformLayout();
             this.panelContainer.ResumeLayout(false);

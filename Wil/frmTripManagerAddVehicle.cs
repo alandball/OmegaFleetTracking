@@ -60,7 +60,7 @@ namespace Wil
             MessageBox.Show(gridViewAllVehicles.Rows[rowindex].Cells[0].Value.ToString()); // gets the value in that row and column. So 1 - 1 or vehicle registration
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonAddTrailer_Click(object sender, EventArgs e)
         {
 
         }
