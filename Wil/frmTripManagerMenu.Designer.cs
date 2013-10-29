@@ -37,9 +37,10 @@
             // buttonHome
             // 
             this.buttonHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHome.Location = new System.Drawing.Point(64, 21);
+            this.buttonHome.Location = new System.Drawing.Point(48, 17);
+            this.buttonHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonHome.Name = "buttonHome";
-            this.buttonHome.Size = new System.Drawing.Size(160, 148);
+            this.buttonHome.Size = new System.Drawing.Size(120, 120);
             this.buttonHome.TabIndex = 0;
             this.buttonHome.Text = "Home";
             this.buttonHome.UseVisualStyleBackColor = true;
@@ -48,9 +49,10 @@
             // buttonScheduleTrip
             // 
             this.buttonScheduleTrip.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonScheduleTrip.Location = new System.Drawing.Point(64, 176);
+            this.buttonScheduleTrip.Location = new System.Drawing.Point(48, 143);
+            this.buttonScheduleTrip.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonScheduleTrip.Name = "buttonScheduleTrip";
-            this.buttonScheduleTrip.Size = new System.Drawing.Size(160, 148);
+            this.buttonScheduleTrip.Size = new System.Drawing.Size(120, 120);
             this.buttonScheduleTrip.TabIndex = 1;
             this.buttonScheduleTrip.Text = "Schedule Trip";
             this.buttonScheduleTrip.UseVisualStyleBackColor = true;
@@ -59,20 +61,22 @@
             // buttonIncidence
             // 
             this.buttonIncidence.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonIncidence.Location = new System.Drawing.Point(64, 331);
+            this.buttonIncidence.Location = new System.Drawing.Point(48, 269);
+            this.buttonIncidence.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonIncidence.Name = "buttonIncidence";
-            this.buttonIncidence.Size = new System.Drawing.Size(160, 148);
+            this.buttonIncidence.Size = new System.Drawing.Size(120, 120);
             this.buttonIncidence.TabIndex = 2;
-            this.buttonIncidence.Text = "Incidence";
+            this.buttonIncidence.Text = "Incidents";
             this.buttonIncidence.UseVisualStyleBackColor = true;
             this.buttonIncidence.Click += new System.EventHandler(this.buttonIncidence_Click);
             // 
             // buttonTripCompleted
             // 
             this.buttonTripCompleted.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTripCompleted.Location = new System.Drawing.Point(64, 486);
+            this.buttonTripCompleted.Location = new System.Drawing.Point(48, 395);
+            this.buttonTripCompleted.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonTripCompleted.Name = "buttonTripCompleted";
-            this.buttonTripCompleted.Size = new System.Drawing.Size(160, 148);
+            this.buttonTripCompleted.Size = new System.Drawing.Size(120, 120);
             this.buttonTripCompleted.TabIndex = 3;
             this.buttonTripCompleted.Text = "Trip Completed";
             this.buttonTripCompleted.UseVisualStyleBackColor = true;
@@ -80,14 +84,15 @@
             // 
             // frmTripManagerMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.buttonTripCompleted);
             this.Controls.Add(this.buttonIncidence);
             this.Controls.Add(this.buttonScheduleTrip);
             this.Controls.Add(this.buttonHome);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmTripManagerMenu";
-            this.Size = new System.Drawing.Size(289, 807);
+            this.Size = new System.Drawing.Size(217, 656);
             this.ResumeLayout(false);
 
         }

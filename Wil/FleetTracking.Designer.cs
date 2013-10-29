@@ -64,7 +64,7 @@
             this.toolStripItemAbout});
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
-            this.mnuMain.Size = new System.Drawing.Size(991, 24);
+            this.mnuMain.Size = new System.Drawing.Size(1008, 24);
             this.mnuMain.TabIndex = 0;
             this.mnuMain.Text = "menuStrip1";
             this.mnuMain.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.mnuMain_ItemClicked);
@@ -203,7 +203,7 @@
             this.panelContainer.Controls.Add(this.panelMain);
             this.panelContainer.Controls.Add(this.panelMenu);
             this.panelContainer.ForeColor = System.Drawing.Color.White;
-            this.panelContainer.Location = new System.Drawing.Point(-9, 27);
+            this.panelContainer.Location = new System.Drawing.Point(0, 27);
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(1008, 701);
             this.panelContainer.TabIndex = 1;
@@ -231,6 +231,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.AutoScrollMinSize = new System.Drawing.Size(1008, 701);
             this.ClientSize = new System.Drawing.Size(1008, 581);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.mnuMain);
