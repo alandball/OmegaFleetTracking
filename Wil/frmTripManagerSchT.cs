@@ -63,8 +63,5 @@ namespace Wil
             FleetTracking._frmTripManagerAddVehicle.Show();
             FleetTracking._frmTripManagerAddVehicle.BringToFront();
         }
-
-        
-
     }
 }

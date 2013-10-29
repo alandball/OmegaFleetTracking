@@ -65,7 +65,7 @@ CREATE TABLE tblService
 (
 ServiceID int IDENTITY(1,1) NOT NULL PRIMARY KEY,
 ServiceDate date,
-PrecedureCode char(10),
+ProcedureCode char(10),
 VehicleID int,
 Notes text,
 FOREIGN KEY (VehicleID) REFERENCES tblVehicle(VehicleID),

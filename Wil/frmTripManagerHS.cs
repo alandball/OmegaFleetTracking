@@ -30,17 +30,13 @@ namespace Wil
             
             string sSchedule = @"
                         SELECT tblScheduleTrip.Destination, tblScheduleTrip.DOD[Date Of Departure], tblScheduleTrip.DOA[Date Of Arrival], tblScheduleTrip.Notes[Notes], tblUser.UserFirstName[Employee Name] 
-                        FROM tblScheduleTrip, tblVehicle, tblUser, tblScheduleLine
-                        WHERE tblScheduleTrip.UserID = tblUser.UserID 
-                        AND tblVehicle.VehicleID = tblScheduleLine.VehicleID 
-                        AND tblScheduleLine.TripID = tblScheduleTrip.TripID";
+                        FROM tblScheduleTrip, tblUser
+                        WHERE tblScheduleTrip.UserID = tblUser.UserID";
 
             _DBAccess.Do_SQLQuery(sSchedule);
 
             gridViewSchedule.DataSource = _DBAccess.bndSrc;
-
            
-
             string sIncidence = @"
                         SELECT tblIncident.Notes, tblVehicle.VehicleReg[Vehicle Registration Number], tblScheduleTrip.DOD[Date Of Departure]
                         FROM tblIncident, tblVehicle, tblScheduleTrip, tblScheduleLine
@@ -51,20 +47,15 @@ namespace Wil
             _aDBAccess.Do_SQLQuery(sIncidence);
 
             gridViewIncidence.DataSource = _aDBAccess.bndSrc;
-
             
-
-            string sTripCompleted = @"
-                        SELECT tblScheduleTrip.Destination, tblScheduleTrip.DOD[Date Of Departure], tblScheduleTrip.DOA[Date Of Arrival], tblVehicle.VehicleReg[Vehicle Registration Number], tblPostTrip.FuelUsage[Fuel Usage]
-                        FROM tblScheduleTrip, tblVehicle, tblPostTrip, tblScheduleLine
-                        WHERE tblScheduleTrip.TripID =tblScheduleLine.TripID
-                        AND tblVehicle.VehicleID = tblScheduleLine.VehicleID
-                        AND tblPostTrip.TripID = tblScheduleLine.TripID";
+            string sTripCompleted = @"SELECT tblScheduleTrip.Destination, tblScheduleTrip.DOD[Date Of Departure], tblScheduleTrip.DOA[Date Of Arrival], tblPostTrip.FuelUsage[Fuel Usage]
+                        FROM tblScheduleTrip, tblPostTrip
+                        WHERE tblPostTrip.TripID = tblScheduleTrip.TripID
+						and tblScheduleTrip.DOA < DATEADD(day, DATEDIFF(day,0,GETDATE()),0)";
 
             _bDBAccess.Do_SQLQuery(sTripCompleted);
 
             gridViewTripCompleted.DataSource = _bDBAccess.bndSrc;
-
         }
     }
 }
