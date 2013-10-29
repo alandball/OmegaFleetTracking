@@ -65,7 +65,7 @@
             // buttonRemoveUser
             // 
             this.buttonRemoveUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRemoveUser.Location = new System.Drawing.Point(331, 353);
+            this.buttonRemoveUser.Location = new System.Drawing.Point(334, 555);
             this.buttonRemoveUser.Margin = new System.Windows.Forms.Padding(2);
             this.buttonRemoveUser.Name = "buttonRemoveUser";
             this.buttonRemoveUser.Size = new System.Drawing.Size(121, 60);

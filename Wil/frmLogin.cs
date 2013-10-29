@@ -18,11 +18,6 @@ namespace Wil
 
         DBAccess _DBAccess = new DBAccess();
 
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             _DBAccess.Do_SQLQuery("SELECT AuthID, AuthUserName, AuthPassword FROM tblAuth WHERE AuthUserName ='" + textBoxUserName.Text + "'");
@@ -32,6 +27,7 @@ namespace Wil
                 if (textBoxPassword.Text.Equals(_DBAccess.dataTbl.Rows[0]["AuthPassword"].ToString().Trim()))
                 {
                     this.Hide();
+                    FleetTracking.pictureBoxHeader.Hide();
                     switch (int.Parse(_DBAccess.dataTbl.Rows[0]["AuthID"].ToString().Trim()))
                     {
                         // Check to see which user group you are in and then open the right controls.

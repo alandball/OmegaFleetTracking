@@ -42,13 +42,15 @@
             this.gridViewDriverTotals.AllowUserToDeleteRows = false;
             this.gridViewDriverTotals.AllowUserToOrderColumns = true;
             this.gridViewDriverTotals.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridViewDriverTotals.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.gridViewDriverTotals.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridViewDriverTotals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridViewDriverTotals.Location = new System.Drawing.Point(36, 76);
-            this.gridViewDriverTotals.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridViewDriverTotals.Location = new System.Drawing.Point(59, 76);
+            this.gridViewDriverTotals.Margin = new System.Windows.Forms.Padding(2);
             this.gridViewDriverTotals.Name = "gridViewDriverTotals";
             this.gridViewDriverTotals.ReadOnly = true;
             this.gridViewDriverTotals.RowTemplate.Height = 24;
-            this.gridViewDriverTotals.Size = new System.Drawing.Size(688, 170);
+            this.gridViewDriverTotals.Size = new System.Drawing.Size(647, 170);
             this.gridViewDriverTotals.TabIndex = 0;
             // 
             // gridViewMechanicsTotals
@@ -57,16 +59,18 @@
             this.gridViewMechanicsTotals.AllowUserToDeleteRows = false;
             this.gridViewMechanicsTotals.AllowUserToOrderColumns = true;
             this.gridViewMechanicsTotals.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridViewMechanicsTotals.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.gridViewMechanicsTotals.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridViewMechanicsTotals.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridViewMechanicsTotals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridViewMechanicsTotals.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.gridViewMechanicsTotals.Location = new System.Drawing.Point(36, 336);
-            this.gridViewMechanicsTotals.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridViewMechanicsTotals.Location = new System.Drawing.Point(59, 336);
+            this.gridViewMechanicsTotals.Margin = new System.Windows.Forms.Padding(2);
             this.gridViewMechanicsTotals.Name = "gridViewMechanicsTotals";
             this.gridViewMechanicsTotals.ReadOnly = true;
             this.gridViewMechanicsTotals.RowTemplate.Height = 24;
             this.gridViewMechanicsTotals.ShowEditingIcon = false;
-            this.gridViewMechanicsTotals.Size = new System.Drawing.Size(688, 188);
+            this.gridViewMechanicsTotals.Size = new System.Drawing.Size(647, 188);
             this.gridViewMechanicsTotals.TabIndex = 1;
             // 
             // labelDriverTotals
@@ -99,7 +103,7 @@
             this.Controls.Add(this.labelDriverTotals);
             this.Controls.Add(this.gridViewMechanicsTotals);
             this.Controls.Add(this.gridViewDriverTotals);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmTimeSheetManagerHS";
             this.Size = new System.Drawing.Size(780, 656);
             this.Load += new System.EventHandler(this.frmTimeSheetManagerHS_Load);

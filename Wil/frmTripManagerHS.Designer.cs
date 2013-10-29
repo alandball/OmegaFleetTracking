@@ -42,40 +42,50 @@
             // gridViewSchedule
             // 
             this.gridViewSchedule.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridViewSchedule.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.gridViewSchedule.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridViewSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridViewSchedule.Location = new System.Drawing.Point(37, 114);
+            this.gridViewSchedule.Location = new System.Drawing.Point(28, 93);
+            this.gridViewSchedule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gridViewSchedule.Name = "gridViewSchedule";
             this.gridViewSchedule.RowTemplate.Height = 24;
-            this.gridViewSchedule.Size = new System.Drawing.Size(946, 150);
+            this.gridViewSchedule.Size = new System.Drawing.Size(710, 122);
             this.gridViewSchedule.TabIndex = 0;
             // 
             // gridViewIncidence
             // 
             this.gridViewIncidence.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridViewIncidence.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.gridViewIncidence.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridViewIncidence.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridViewIncidence.Location = new System.Drawing.Point(37, 361);
+            this.gridViewIncidence.Location = new System.Drawing.Point(28, 293);
+            this.gridViewIncidence.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gridViewIncidence.Name = "gridViewIncidence";
             this.gridViewIncidence.RowTemplate.Height = 24;
-            this.gridViewIncidence.Size = new System.Drawing.Size(946, 150);
+            this.gridViewIncidence.Size = new System.Drawing.Size(710, 122);
             this.gridViewIncidence.TabIndex = 1;
             // 
             // gridViewTripCompleted
             // 
             this.gridViewTripCompleted.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridViewTripCompleted.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.gridViewTripCompleted.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridViewTripCompleted.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridViewTripCompleted.Location = new System.Drawing.Point(37, 610);
+            this.gridViewTripCompleted.Location = new System.Drawing.Point(28, 496);
+            this.gridViewTripCompleted.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gridViewTripCompleted.Name = "gridViewTripCompleted";
             this.gridViewTripCompleted.RowTemplate.Height = 24;
-            this.gridViewTripCompleted.Size = new System.Drawing.Size(946, 150);
+            this.gridViewTripCompleted.Size = new System.Drawing.Size(710, 122);
             this.gridViewTripCompleted.TabIndex = 2;
             // 
             // labelSchedule
             // 
             this.labelSchedule.AutoSize = true;
             this.labelSchedule.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSchedule.Location = new System.Drawing.Point(461, 66);
+            this.labelSchedule.Location = new System.Drawing.Point(346, 54);
+            this.labelSchedule.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelSchedule.Name = "labelSchedule";
-            this.labelSchedule.Size = new System.Drawing.Size(110, 25);
+            this.labelSchedule.Size = new System.Drawing.Size(89, 20);
             this.labelSchedule.TabIndex = 3;
             this.labelSchedule.Text = "Schedule:";
             // 
@@ -83,9 +93,10 @@
             // 
             this.labelIncidence.AutoSize = true;
             this.labelIncidence.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIncidence.Location = new System.Drawing.Point(459, 322);
+            this.labelIncidence.Location = new System.Drawing.Point(344, 262);
+            this.labelIncidence.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelIncidence.Name = "labelIncidence";
-            this.labelIncidence.Size = new System.Drawing.Size(112, 25);
+            this.labelIncidence.Size = new System.Drawing.Size(92, 20);
             this.labelIncidence.TabIndex = 4;
             this.labelIncidence.Text = "Incidence:";
             // 
@@ -93,15 +104,16 @@
             // 
             this.labelTripCompleted.AutoSize = true;
             this.labelTripCompleted.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTripCompleted.Location = new System.Drawing.Point(424, 571);
+            this.labelTripCompleted.Location = new System.Drawing.Point(318, 464);
+            this.labelTripCompleted.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTripCompleted.Name = "labelTripCompleted";
-            this.labelTripCompleted.Size = new System.Drawing.Size(167, 25);
+            this.labelTripCompleted.Size = new System.Drawing.Size(135, 20);
             this.labelTripCompleted.TabIndex = 5;
             this.labelTripCompleted.Text = "Trip Completed:";
             // 
             // frmTripManagerHS
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.labelTripCompleted);
             this.Controls.Add(this.labelIncidence);
@@ -109,8 +121,9 @@
             this.Controls.Add(this.gridViewTripCompleted);
             this.Controls.Add(this.gridViewIncidence);
             this.Controls.Add(this.gridViewSchedule);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmTripManagerHS";
-            this.Size = new System.Drawing.Size(1040, 807);
+            this.Size = new System.Drawing.Size(780, 656);
             this.Load += new System.EventHandler(this.frmTripManagerHS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridViewSchedule)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewIncidence)).EndInit();

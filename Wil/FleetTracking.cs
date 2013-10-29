@@ -113,6 +113,7 @@ namespace Wil
 
         private void MnuItmSwitchUser_Click(object sender, EventArgs e)
         {
+            pictureBoxHeader.Show();
             _frmOfficeManagerHS.Hide();
             _frmOfficeManagerAddUser.Hide();
             _frmOfficeManager_Remove.Hide();

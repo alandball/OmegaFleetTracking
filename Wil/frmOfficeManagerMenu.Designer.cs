@@ -32,6 +32,8 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonRemove = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonHome
@@ -78,16 +80,28 @@
             this.buttonEdit.UseVisualStyleBackColor = true;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.BackgroundImage = global::Wil.Properties.Resources.LogoWithBackgroundNosmokesparks;
+            this.pictureBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(37, 520);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(140, 133);
+            this.pictureBoxLogo.TabIndex = 7;
+            this.pictureBoxLogo.TabStop = false;
+            // 
             // frmOfficeManagerMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pictureBoxLogo);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonRemove);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.buttonHome);
             this.Name = "frmOfficeManagerMenu";
             this.Size = new System.Drawing.Size(217, 656);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -98,5 +112,6 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonRemove;
         private System.Windows.Forms.Button buttonEdit;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
     }
 }

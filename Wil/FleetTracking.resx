@@ -123,4 +123,81 @@
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AAAAAAwAA
+        AAsAAAAJAAAABwAAAAUAAAADAAAAAwAAAAIAAAABAAAAAf///wD///8A////AP///wD///8AAAAAAQAA
+        AAEAAAACAAAAAwAAAAMAAAAFAAAABwAAAAkAAAALAAAABP///wD///8A////AP///wD///8A////AP//
+        /wAAAABoAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAlv///wD///8A////AAAA
+        AH4AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAACD////AP///wD///8A////AP//
+        /wD///8A////AAAAAH8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAACr////AP//
+        /wD///8AAAAAkgAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAJn///8A////AP//
+        /wD///8A////AP///wD///8AAAAAlQAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
+        AMH///8A////AP///wAAAACmAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAArv//
+        /wD///8A////AP///wD///8A////AP///wAAAACqAAAA/wAAAMUAAABUAAAAVAAAAFQAAABUAAAAbgAA
+        APkAAAD/AAAAfv///wD///8A////AAAAAGMAAAD/AAAA+QAAAG0AAABUAAAAVAAAAFQAAABUAAAAvAAA
+        AP8AAADE////AP///wD///8A////AP///wD///8A////AAAAAMAAAAD/AAAAPv///wD///8A////AAAA
+        ACYAAADgAAAA/wAAANwAAAAH////AP///wD///8AAAAAAQAAAMcAAAD/AAAA3QAAACH///8A////AP//
+        /wAAAAAsAAAA/QAAANn///8A////AP///wD///8A////AP///wD///8AAAAA1gAAAL////8A////AP//
+        /wAAAAAkAAAA5gAAAP8AAAD/AAAATf///wD///8A////AP///wD///8AAAAAMwAAAP8AAAD/AAAA4AAA
+        AB3///8A////AP///wAAAACiAAAA7v///wD///8A////AP///wD///8A////AP///wAAAADlAAAAQP//
+        /wD///8AAAAAFwAAAOAAAAD/AAAA/wAAANcAAAAB////AP///wD///8A////AP///wD///8AAAAAvAAA
+        AP8AAAD/AAAA2AAAABD///8A////AAAAACEAAADuAAAABf///wD///8A////AP///wD///8A////AAAA
+        AAT///8A////AAAAAAUAAADGAAAA/wAAAP8AAAD/AAAAa////wD///8A////AP///wD///8A////AP//
+        /wAAAABOAAAA/wAAAP8AAAD/AAAAuQAAAAL///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8AAAAAgQAAAP8AAAD/AAAA/wAAAPwAAAAP////AP///wD///8A////AP//
+        /wD///8A////AAAAAAIAAADrAAAA/wAAAP8AAAD/AAAAdv///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AAAAACQAAAD6AAAA/wAAAP8AAAD/AAAAyf///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AAAAAKwAAAD/AAAA/wAAAP8AAAD4AAAAH////wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8AAAAAnwAAAP8AAAD/AAAA/wAAAP8AAACJ////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8AAAAAagAAAP8AAAD/AAAA/wAAAP8AAACe////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AAAAAAsAAAD1AAAA/wAAAP8AAAD/AAAA/wAA
+        AGP///8A////AP///wD///8A////AP///wD///8A////AP///wAAAABHAAAA/wAAAP8AAAD/AAAA/wAA
+        APcAAAAQ////AP///wD///8A////AP///wD///8A////AP///wD///8AAAAAQwAAAP8AAAD/AAAA/wAA
+        AP8AAAD/AAAATv///wD///8A////AP///wD///8A////AP///wD///8A////AAAAADEAAAD/AAAA/wAA
+        AP8AAAD/AAAA/wAAAFL///8A////AP///wD///8A////AP///wD///8A////AP///wAAAABlAAAA/wAA
+        AP8AAAD/AAAA/wAAAP8AAAA8////AP///wD///8A////AP///wD///8A////AP///wD///8AAAAAIAAA
+        AP8AAAD/AAAA/wAAAP8AAAD/AAAAfv///wD///8A////AP///wD///8A////AP///wD///8A////AAAA
+        AGMAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAEP///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wAAAAAqAAAA/wAAAP8AAAD/AAAA/wAAAP8AAACI////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8AAAAASQAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAVv///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AAAAAEIAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAHD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wAAAAATAAAA+gAAAP8AAAD/AAAA/wAAAP8AAAB+////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8AAAAAbgAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAQP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wAAAACyAAAA/wAAAP8AAAD/AAAA/wAAAL////8A////AP//
+        /wD///8A////AP///wD///8A////AP///wAAAAC2AAAA/wAAAP8AAAD/AAAA/wAAAOYAAAAC////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AAAAACgAAAD4AAAA/wAAAP8AAAD/AAAA+wAA
+        AB////8A////AP///wD///8A////AP///wD///8AAAAAIAAAAPoAAAD/AAAA/wAAAP8AAAD/AAAAYP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAAAAGEAAAD9AAAA/wAA
+        AP8AAAD/AAAApf///wD///8A////AP///wD///8A////AP///wAAAACtAAAA/wAAAP8AAAD/AAAA/wAA
+        AKf///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAAA
+        AFsAAAD0AAAA/wAAAP8AAAD/AAAAgQAAAAH///8A////AP///wAAAAADAAAAjgAAAP8AAAD/AAAA/wAA
+        AP8AAACdAAAAA////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AAAAACEAAACxAAAA/gAAAP8AAAD/AAAA0wAAAIIAAABrAAAAhwAAANsAAAD/AAAA/wAA
+        AP8AAADcAAAATv///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wAAAAAiAAAAfwAAALoAAADsAAAA/gAAAP8AAAD/AAAA+QAA
+        ANIAAACZAAAASQAAAAH///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAAAAADAAAAEgAA
+        AAr///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////////////////////////////////8APAD/ADgA/gA4AP4+fPj+fH
+        x8/nj+PP7w/h7/4f8P/8H/D//B/wf/gf+D/4P/g/+D/4P/g/+D/4P/gf+D/4P/g/+D/4H/A//B/wf/4P
+        4H//B8D//4ED///wD/////////////////8=
+</value>
+  </data>
 </root>

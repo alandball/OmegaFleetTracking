@@ -51,7 +51,7 @@
             "Truck",
             "Trailer"});
             this.comboBoxTrailerOrVehicle.Location = new System.Drawing.Point(272, 49);
-            this.comboBoxTrailerOrVehicle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxTrailerOrVehicle.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxTrailerOrVehicle.Name = "comboBoxTrailerOrVehicle";
             this.comboBoxTrailerOrVehicle.Size = new System.Drawing.Size(92, 21);
             this.comboBoxTrailerOrVehicle.TabIndex = 0;
@@ -59,7 +59,7 @@
             // textBoxRegNumber
             // 
             this.textBoxRegNumber.Location = new System.Drawing.Point(272, 115);
-            this.textBoxRegNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxRegNumber.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxRegNumber.Name = "textBoxRegNumber";
             this.textBoxRegNumber.Size = new System.Drawing.Size(169, 20);
             this.textBoxRegNumber.TabIndex = 1;
@@ -67,7 +67,7 @@
             // textBoxVinNumber
             // 
             this.textBoxVinNumber.Location = new System.Drawing.Point(272, 184);
-            this.textBoxVinNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxVinNumber.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxVinNumber.Name = "textBoxVinNumber";
             this.textBoxVinNumber.Size = new System.Drawing.Size(169, 20);
             this.textBoxVinNumber.TabIndex = 2;
@@ -75,7 +75,7 @@
             // textBoxVehicleDesc
             // 
             this.textBoxVehicleDesc.Location = new System.Drawing.Point(272, 251);
-            this.textBoxVehicleDesc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxVehicleDesc.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxVehicleDesc.Multiline = true;
             this.textBoxVehicleDesc.Name = "textBoxVehicleDesc";
             this.textBoxVehicleDesc.Size = new System.Drawing.Size(169, 102);
@@ -83,8 +83,8 @@
             // 
             // textBoxVehicleKm
             // 
-            this.textBoxVehicleKm.Location = new System.Drawing.Point(272, 430);
-            this.textBoxVehicleKm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxVehicleKm.Location = new System.Drawing.Point(272, 398);
+            this.textBoxVehicleKm.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxVehicleKm.Name = "textBoxVehicleKm";
             this.textBoxVehicleKm.Size = new System.Drawing.Size(169, 20);
             this.textBoxVehicleKm.TabIndex = 4;
@@ -137,7 +137,7 @@
             // 
             this.labelVehicleKm.AutoSize = true;
             this.labelVehicleKm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVehicleKm.Location = new System.Drawing.Point(106, 430);
+            this.labelVehicleKm.Location = new System.Drawing.Point(106, 398);
             this.labelVehicleKm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelVehicleKm.Name = "labelVehicleKm";
             this.labelVehicleKm.Size = new System.Drawing.Size(93, 17);
@@ -148,7 +148,7 @@
             // 
             this.labelCategoryID.AutoSize = true;
             this.labelCategoryID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCategoryID.Location = new System.Drawing.Point(106, 526);
+            this.labelCategoryID.Location = new System.Drawing.Point(106, 471);
             this.labelCategoryID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCategoryID.Name = "labelCategoryID";
             this.labelCategoryID.Size = new System.Drawing.Size(119, 17);
@@ -158,8 +158,8 @@
             // buttonSubmit
             // 
             this.buttonSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSubmit.Location = new System.Drawing.Point(62, 581);
-            this.buttonSubmit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSubmit.Location = new System.Drawing.Point(272, 550);
+            this.buttonSubmit.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(110, 60);
             this.buttonSubmit.TabIndex = 12;
@@ -170,8 +170,8 @@
             // buttonClear
             // 
             this.buttonClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClear.Location = new System.Drawing.Point(198, 581);
-            this.buttonClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonClear.Location = new System.Drawing.Point(408, 550);
+            this.buttonClear.Margin = new System.Windows.Forms.Padding(2);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(110, 60);
             this.buttonClear.TabIndex = 13;
@@ -181,7 +181,7 @@
             // comboBoxCategory
             // 
             this.comboBoxCategory.FormattingEnabled = true;
-            this.comboBoxCategory.Location = new System.Drawing.Point(272, 526);
+            this.comboBoxCategory.Location = new System.Drawing.Point(272, 471);
             this.comboBoxCategory.Name = "comboBoxCategory";
             this.comboBoxCategory.Size = new System.Drawing.Size(169, 21);
             this.comboBoxCategory.TabIndex = 14;
@@ -204,7 +204,7 @@
             this.Controls.Add(this.textBoxVinNumber);
             this.Controls.Add(this.textBoxRegNumber);
             this.Controls.Add(this.comboBoxTrailerOrVehicle);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmVehicleManager";
             this.Size = new System.Drawing.Size(780, 656);
             this.Load += new System.EventHandler(this.frmVehicleManager_Load);

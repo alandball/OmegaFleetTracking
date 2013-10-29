@@ -34,6 +34,8 @@
             this.labelUserName = new System.Windows.Forms.Label();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.textBoxUserName = new System.Windows.Forms.TextBox();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonLogin
@@ -89,10 +91,21 @@
             this.textBoxUserName.TabIndex = 1;
             this.textBoxUserName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxUserName_KeyDown);
             // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.BackgroundImage = global::Wil.Properties.Resources.LogoFinal;
+            this.pictureBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(36, 390);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(470, 244);
+            this.pictureBoxLogo.TabIndex = 10;
+            this.pictureBoxLogo.TabStop = false;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pictureBoxLogo);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.labelPassword);
@@ -101,10 +114,9 @@
             this.Controls.Add(this.textBoxUserName);
             this.Name = "frmLogin";
             this.Size = new System.Drawing.Size(780, 656);
-            this.Load += new System.EventHandler(this.frmLogin_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
@@ -115,5 +127,6 @@
         private System.Windows.Forms.Label labelUserName;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.TextBox textBoxUserName;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
     }
 }

@@ -56,7 +56,7 @@
             // textBoxFuelUsage
             // 
             this.textBoxFuelUsage.Location = new System.Drawing.Point(315, 296);
-            this.textBoxFuelUsage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxFuelUsage.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxFuelUsage.Name = "textBoxFuelUsage";
             this.textBoxFuelUsage.Size = new System.Drawing.Size(102, 20);
             this.textBoxFuelUsage.TabIndex = 1;
@@ -64,8 +64,8 @@
             // buttonSubmit
             // 
             this.buttonSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSubmit.Location = new System.Drawing.Point(62, 581);
-            this.buttonSubmit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSubmit.Location = new System.Drawing.Point(147, 528);
+            this.buttonSubmit.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(110, 60);
             this.buttonSubmit.TabIndex = 16;
@@ -76,8 +76,8 @@
             // buttonClear
             // 
             this.buttonClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClear.Location = new System.Drawing.Point(198, 581);
-            this.buttonClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonClear.Location = new System.Drawing.Point(283, 528);
+            this.buttonClear.Margin = new System.Windows.Forms.Padding(2);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(110, 60);
             this.buttonClear.TabIndex = 17;
@@ -88,7 +88,7 @@
             // 
             this.comboBoxVehicleRegistrationNum.FormattingEnabled = true;
             this.comboBoxVehicleRegistrationNum.Location = new System.Drawing.Point(315, 242);
-            this.comboBoxVehicleRegistrationNum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxVehicleRegistrationNum.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxVehicleRegistrationNum.Name = "comboBoxVehicleRegistrationNum";
             this.comboBoxVehicleRegistrationNum.Size = new System.Drawing.Size(92, 21);
             this.comboBoxVehicleRegistrationNum.TabIndex = 18;
@@ -108,7 +108,7 @@
             // 
             this.comboBoxDestination.FormattingEnabled = true;
             this.comboBoxDestination.Location = new System.Drawing.Point(315, 175);
-            this.comboBoxDestination.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxDestination.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxDestination.Name = "comboBoxDestination";
             this.comboBoxDestination.Size = new System.Drawing.Size(92, 21);
             this.comboBoxDestination.TabIndex = 20;
@@ -127,7 +127,7 @@
             // datePickerDateOfDeparture
             // 
             this.datePickerDateOfDeparture.Location = new System.Drawing.Point(315, 77);
-            this.datePickerDateOfDeparture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.datePickerDateOfDeparture.Margin = new System.Windows.Forms.Padding(2);
             this.datePickerDateOfDeparture.Name = "datePickerDateOfDeparture";
             this.datePickerDateOfDeparture.Size = new System.Drawing.Size(151, 20);
             this.datePickerDateOfDeparture.TabIndex = 25;
@@ -157,7 +157,7 @@
             // datePickerDateOfArrival
             // 
             this.datePickerDateOfArrival.Location = new System.Drawing.Point(315, 127);
-            this.datePickerDateOfArrival.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.datePickerDateOfArrival.Margin = new System.Windows.Forms.Padding(2);
             this.datePickerDateOfArrival.Name = "datePickerDateOfArrival";
             this.datePickerDateOfArrival.Size = new System.Drawing.Size(151, 20);
             this.datePickerDateOfArrival.TabIndex = 29;
@@ -178,7 +178,7 @@
             this.Controls.Add(this.buttonSubmit);
             this.Controls.Add(this.textBoxFuelUsage);
             this.Controls.Add(this.labelFuelUsage);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmTripManagerTripComp";
             this.Size = new System.Drawing.Size(780, 656);
             this.Load += new System.EventHandler(this.frmTripManagerTripComp_Load);

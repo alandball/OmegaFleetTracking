@@ -30,8 +30,6 @@ namespace Wil
                 {
                     try
                     {
-                        
-
                         doSqlQ = String.Format(@"insert into tblUser values('{0}', '{1}', '{2}', '{3}', {4});", textBoxName.Text, textBoxLastName.Text, textBoxCellNumber.Text, textBoxEmail.Text, (comboBoxUserType.SelectedIndex + 1));
                         doSQL.Do_SQLQuery(doSqlQ);
 

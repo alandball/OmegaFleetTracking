@@ -45,8 +45,8 @@
             // buttonSubmit
             // 
             this.buttonSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSubmit.Location = new System.Drawing.Point(62, 581);
-            this.buttonSubmit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSubmit.Location = new System.Drawing.Point(131, 538);
+            this.buttonSubmit.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(110, 60);
             this.buttonSubmit.TabIndex = 12;
@@ -57,8 +57,8 @@
             // buttonClear
             // 
             this.buttonClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClear.Location = new System.Drawing.Point(198, 581);
-            this.buttonClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonClear.Location = new System.Drawing.Point(266, 538);
+            this.buttonClear.Margin = new System.Windows.Forms.Padding(2);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(110, 60);
             this.buttonClear.TabIndex = 13;
@@ -68,16 +68,16 @@
             // 
             // textBoxFirstName
             // 
-            this.textBoxFirstName.Location = new System.Drawing.Point(317, 127);
-            this.textBoxFirstName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxFirstName.Location = new System.Drawing.Point(387, 127);
+            this.textBoxFirstName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(179, 20);
             this.textBoxFirstName.TabIndex = 14;
             // 
             // textBoxLastName
             // 
-            this.textBoxLastName.Location = new System.Drawing.Point(317, 173);
-            this.textBoxLastName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxLastName.Location = new System.Drawing.Point(387, 173);
+            this.textBoxLastName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(179, 20);
             this.textBoxLastName.TabIndex = 15;
@@ -85,8 +85,8 @@
             // comboBoxType
             // 
             this.comboBoxType.FormattingEnabled = true;
-            this.comboBoxType.Location = new System.Drawing.Point(317, 311);
-            this.comboBoxType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxType.Location = new System.Drawing.Point(387, 311);
+            this.comboBoxType.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(179, 21);
             this.comboBoxType.TabIndex = 16;
@@ -130,20 +130,20 @@
             this.labelEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.labelEmail.Location = new System.Drawing.Point(147, 265);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(47, 17);
+            this.labelEmail.Size = new System.Drawing.Size(52, 17);
             this.labelEmail.TabIndex = 21;
-            this.labelEmail.Text = "Email";
+            this.labelEmail.Text = "Email:";
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(317, 265);
+            this.textBoxEmail.Location = new System.Drawing.Point(387, 265);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(179, 20);
             this.textBoxEmail.TabIndex = 22;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(317, 219);
+            this.textBox1.Location = new System.Drawing.Point(387, 219);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(179, 20);
             this.textBox1.TabIndex = 23;
@@ -154,9 +154,9 @@
             this.labelCell.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.labelCell.Location = new System.Drawing.Point(147, 219);
             this.labelCell.Name = "labelCell";
-            this.labelCell.Size = new System.Drawing.Size(96, 17);
+            this.labelCell.Size = new System.Drawing.Size(101, 17);
             this.labelCell.TabIndex = 24;
-            this.labelCell.Text = "Cell Number";
+            this.labelCell.Text = "Cell Number:";
             // 
             // frmTimeSheetManagerAddEmp
             // 
@@ -174,7 +174,7 @@
             this.Controls.Add(this.textBoxFirstName);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.buttonSubmit);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmTimeSheetManagerAddEmp";
             this.Size = new System.Drawing.Size(780, 656);
             this.Load += new System.EventHandler(this.frmTimeSheetManagerAddEmp_Load);

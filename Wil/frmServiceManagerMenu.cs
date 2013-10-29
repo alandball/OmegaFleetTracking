@@ -15,5 +15,16 @@ namespace Wil
         {
             InitializeComponent();
         }
+
+        private void buttonSchVM_Click(object sender, EventArgs e)
+        {
+            FleetTracking._frmServiceManagerSS.Show();
+            FleetTracking._frmServiceManagerSS.BringToFront();
+        }
+
+        private void buttonHome_Click(object sender, EventArgs e)
+        {
+            FleetTracking._frmServiceManagerHS.BringToFront();
+        }
     }
 }
