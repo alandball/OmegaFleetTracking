@@ -28,14 +28,14 @@ namespace Wil
 
             _DBAccess.Do_SQLQuery(sQuery);
 
-            comboBoxTripLineNum.DataSource = _DBAccess.bndSrc;
-            comboBoxTripLineNum.DisplayMember = "Info"; //colum you want to show in comboBox
-            comboBoxTripLineNum.ValueMember = "ScheduleLineID"; //column you want to use in the background (not necessary)!
+            //comboBoxTripLineNum.DataSource = _DBAccess.bndSrc;
+            //comboBoxTripLineNum.DisplayMember = "Info"; //colum you want to show in comboBox
+            //comboBoxTripLineNum.ValueMember = "ScheduleLineID"; //column you want to use in the background (not necessary)!
         }
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(comboBoxTripLineNum.ValueMember);
+            //MessageBox.Show(comboBoxTripLineNum.ValueMember);
              //string sQuery = @"INSERT tblIncident VALUES('" + textBoxNote.Text + "','" + comboBoxTripLineNum.ValueMember + "')";
 
             //_DBAccess.Do_SQLQuery(sQuery);
@@ -44,7 +44,7 @@ namespace Wil
 
         private void buttonClear_Click(object sender, EventArgs e)
         {
-            comboBoxTripLineNum.SelectedIndex = 0;
+            //comboBoxTripLineNum.SelectedIndex = 0;
             textBoxNote.Text = "";
         }
     }

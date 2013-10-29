@@ -27,7 +27,7 @@ namespace Wil
         private void buttonEditUser_Click(object sender, EventArgs e)
         {
             string userID = gridViewAllUsers.Rows[gridViewAllUsers.CurrentCell.RowIndex].Cells["UserID"].Value.ToString();
-            string sQuery = string.Format(@"UPDATE tblUser
+            /*string sQuery = string.Format(@"UPDATE tblUser
                                             SET UserFirstName='{0}', UserLastName='{1}', UserCell='{2}', UserEmail='{3}', UserTypeID='{4}'
                                             WHERE tblUser.UserID = {5};", );
             _DBAccess.Do_SQLQueryAlt(sQuery);
@@ -38,7 +38,7 @@ namespace Wil
 
             MessageBox.Show("User was removed");
 
-            reload();
+            reload();*/
         }
 
         public void reload()
