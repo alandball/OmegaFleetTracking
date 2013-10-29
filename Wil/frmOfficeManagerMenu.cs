@@ -20,7 +20,7 @@ namespace Wil
         {
             FleetTracking._frmOfficeManagerAddUser.Hide();
             FleetTracking._frmOfficeManager_Remove.Hide();
-            //FleetTracking._frmOfficeManager_Edit.Hide();
+            FleetTracking._frmOfficeManager_Edit.Hide();
             FleetTracking._frmOfficeManagerHS.Show();
             FleetTracking._frmOfficeManagerHS.reload();
         }
@@ -29,7 +29,7 @@ namespace Wil
         {
             FleetTracking._frmOfficeManagerHS.Hide();
             FleetTracking._frmOfficeManager_Remove.Hide();
-            //FleetTracking._frmOfficeManager_Edit.Hide();
+            FleetTracking._frmOfficeManager_Edit.Hide();
             FleetTracking._frmOfficeManagerAddUser.Show();
         }
 
@@ -37,14 +37,18 @@ namespace Wil
         {
             FleetTracking._frmOfficeManagerHS.Hide();
             FleetTracking._frmOfficeManagerAddUser.Hide();
-            //FleetTracking._frmOfficeManager_Edit.Hide();
+            FleetTracking._frmOfficeManager_Edit.Hide();
             FleetTracking._frmOfficeManager_Remove.Show();
             FleetTracking._frmOfficeManager_Remove.reload();
         }
 
         private void buttonEdit_Click(object sender, EventArgs e)
         {
-
+            FleetTracking._frmOfficeManagerHS.Hide();
+            FleetTracking._frmOfficeManagerAddUser.Hide();
+            FleetTracking._frmOfficeManager_Remove.Hide();
+            FleetTracking._frmOfficeManager_Edit.Show();
+            FleetTracking._frmOfficeManager_Remove.reload();
         }
     }
 }

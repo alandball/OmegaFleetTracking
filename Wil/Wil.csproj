@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmOfficeManager_Edit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmOfficeManager_Edit.Designer.cs">
+      <DependentUpon>frmOfficeManager_Edit.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmOfficeManager_Remove.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -193,6 +199,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmOfficeManager_Edit.resx">
+      <DependentUpon>frmOfficeManager_Edit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmOfficeManager_Remove.resx">
       <DependentUpon>frmOfficeManager_Remove.cs</DependentUpon>
     </EmbeddedResource>
