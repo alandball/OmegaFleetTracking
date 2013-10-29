@@ -20,7 +20,11 @@ namespace Wil
 
         private void frmOfficeManagerHS_Load(object sender, EventArgs e)
         {
+            reload();
+        }
 
+        public void reload()
+        {
             string sGetUsers = @"
                         SELECT UserFirstName, UserLastName, UserCell, UserEmail, UserTypeName 
                         FROM tblUser, tblUserType, tblAuth
@@ -29,9 +33,6 @@ namespace Wil
             _DBAccess.Do_SQLQuery(sGetUsers);
 
             gridViewAllUsers.DataSource = _DBAccess.bndSrc;
-            
-                
         }
-
     }
 }

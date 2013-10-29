@@ -22,6 +22,7 @@ namespace Wil
             FleetTracking._frmOfficeManager_Remove.Hide();
             //FleetTracking._frmOfficeManager_Edit.Hide();
             FleetTracking._frmOfficeManagerHS.Show();
+            FleetTracking._frmOfficeManagerHS.reload();
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -38,6 +39,12 @@ namespace Wil
             FleetTracking._frmOfficeManagerAddUser.Hide();
             //FleetTracking._frmOfficeManager_Edit.Hide();
             FleetTracking._frmOfficeManager_Remove.Show();
+            FleetTracking._frmOfficeManager_Remove.reload();
+        }
+
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -40,6 +40,12 @@
             this.buttonAddUser = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
             this.comboBoxUserType = new System.Windows.Forms.ComboBox();
+            this.textBoxUsername = new System.Windows.Forms.TextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.labelUsername = new System.Windows.Forms.Label();
+            this.labelPassword = new System.Windows.Forms.Label();
+            this.labelAuth = new System.Windows.Forms.Label();
+            this.labelEmployee = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxName
@@ -169,11 +175,77 @@
             this.comboBoxUserType.Size = new System.Drawing.Size(175, 21);
             this.comboBoxUserType.TabIndex = 7;
             // 
+            // textBoxUsername
+            // 
+            this.textBoxUsername.Location = new System.Drawing.Point(233, 521);
+            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.Size = new System.Drawing.Size(175, 20);
+            this.textBoxUsername.TabIndex = 18;
+            // 
+            // textBoxPassword
+            // 
+            this.textBoxPassword.Location = new System.Drawing.Point(233, 567);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(175, 20);
+            this.textBoxPassword.TabIndex = 19;
+            // 
+            // labelUsername
+            // 
+            this.labelUsername.AutoSize = true;
+            this.labelUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsername.Location = new System.Drawing.Point(125, 522);
+            this.labelUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelUsername.Name = "labelUsername";
+            this.labelUsername.Size = new System.Drawing.Size(81, 17);
+            this.labelUsername.TabIndex = 20;
+            this.labelUsername.Text = "Username";
+            // 
+            // labelPassword
+            // 
+            this.labelPassword.AutoSize = true;
+            this.labelPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPassword.Location = new System.Drawing.Point(125, 570);
+            this.labelPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(77, 17);
+            this.labelPassword.TabIndex = 21;
+            this.labelPassword.Text = "Password";
+            // 
+            // labelAuth
+            // 
+            this.labelAuth.AutoSize = true;
+            this.labelAuth.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAuth.Location = new System.Drawing.Point(192, 487);
+            this.labelAuth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelAuth.Name = "labelAuth";
+            this.labelAuth.Size = new System.Drawing.Size(159, 17);
+            this.labelAuth.TabIndex = 22;
+            this.labelAuth.Text = "Authorization Details";
+            // 
+            // labelEmployee
+            // 
+            this.labelEmployee.AutoSize = true;
+            this.labelEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmployee.Location = new System.Drawing.Point(192, 49);
+            this.labelEmployee.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelEmployee.Name = "labelEmployee";
+            this.labelEmployee.Size = new System.Drawing.Size(133, 17);
+            this.labelEmployee.TabIndex = 23;
+            this.labelEmployee.Text = "Employee Details";
+            // 
             // frmOfficeManager_AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.labelEmployee);
+            this.Controls.Add(this.labelAuth);
+            this.Controls.Add(this.labelPassword);
+            this.Controls.Add(this.labelUsername);
+            this.Controls.Add(this.textBoxPassword);
+            this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.buttonAddUser);
             this.Controls.Add(this.labelUserType);
@@ -207,6 +279,12 @@
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.ComboBox comboBoxUserType;
         public System.Windows.Forms.Button buttonAddUser;
+        private System.Windows.Forms.TextBox textBoxUsername;
+        private System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.Label labelUsername;
+        private System.Windows.Forms.Label labelPassword;
+        private System.Windows.Forms.Label labelAuth;
+        private System.Windows.Forms.Label labelEmployee;
 
     }
 }

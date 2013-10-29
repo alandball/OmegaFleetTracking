@@ -32,8 +32,6 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonRemove = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
-            this.comboBoxSearch = new System.Windows.Forms.ComboBox();
-            this.labelSearch = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonHome
@@ -78,33 +76,12 @@
             this.buttonEdit.TabIndex = 3;
             this.buttonEdit.Text = "Edit";
             this.buttonEdit.UseVisualStyleBackColor = true;
-            // 
-            // comboBoxSearch
-            // 
-            this.comboBoxSearch.FormattingEnabled = true;
-            this.comboBoxSearch.Location = new System.Drawing.Point(67, 570);
-            this.comboBoxSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBoxSearch.Name = "comboBoxSearch";
-            this.comboBoxSearch.Size = new System.Drawing.Size(92, 21);
-            this.comboBoxSearch.TabIndex = 4;
-            // 
-            // labelSearch
-            // 
-            this.labelSearch.AutoSize = true;
-            this.labelSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSearch.Location = new System.Drawing.Point(86, 552);
-            this.labelSearch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelSearch.Name = "labelSearch";
-            this.labelSearch.Size = new System.Drawing.Size(59, 17);
-            this.labelSearch.TabIndex = 5;
-            this.labelSearch.Text = "Search";
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // frmOfficeManagerMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.labelSearch);
-            this.Controls.Add(this.comboBoxSearch);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonRemove);
             this.Controls.Add(this.buttonAdd);
@@ -112,7 +89,6 @@
             this.Name = "frmOfficeManagerMenu";
             this.Size = new System.Drawing.Size(217, 656);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -122,7 +98,5 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonRemove;
         private System.Windows.Forms.Button buttonEdit;
-        private System.Windows.Forms.ComboBox comboBoxSearch;
-        private System.Windows.Forms.Label labelSearch;
     }
 }

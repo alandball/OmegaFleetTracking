@@ -20,22 +20,37 @@ namespace Wil
 
         private void frmOfficeManagerHS_Load(object sender, EventArgs e)
         {
+            reload();
+        }
 
+        private void buttonRemoveUser_Click(object sender, EventArgs e)
+        {
+            string userID = gridViewAllUsers.Rows[gridViewAllUsers.CurrentCell.RowIndex].Cells["UserID"].Value.ToString();
+            string sQuery = @"DELETE FROM tblAuth
+                            WHERE tblAuth.UserID =" + userID + ";";
+            _DBAccess.Do_SQLQueryAlt(sQuery);
+
+            sQuery = @"DELETE FROM tblUser
+                    WHERE tblUser.UserID =" + userID + ";";
+            _DBAccess.Do_SQLQueryAlt(sQuery);
+
+            MessageBox.Show("User was removed");
+
+            reload();
+        }
+
+        public void reload()
+        {
             string sGetUsers = @"
-                        SELECT UserFirstName, UserLastName, UserCell, UserEmail, UserTypeName 
+                        SELECT tblUser.UserID, UserFirstName, UserLastName, UserCell, UserEmail, UserTypeName 
                         FROM tblUser, tblUserType, tblAuth
                         WHERE tblUser.UserID = tblAuth.UserID AND tblUserType.UserTypeID = tblUser.UserTypeID";
 
             _DBAccess.Do_SQLQuery(sGetUsers);
 
             gridViewAllUsers.DataSource = _DBAccess.bndSrc;
-            
-                
-        }
 
-        private void buttonAddUser_Click(object sender, EventArgs e)
-        {
-
+            gridViewAllUsers.Columns[0].Visible = false;
         }
 
     }

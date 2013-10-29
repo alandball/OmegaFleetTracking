@@ -30,8 +30,19 @@ namespace Wil
                 {
                     try
                     {
+                        
+
                         doSqlQ = String.Format(@"insert into tblUser values('{0}', '{1}', '{2}', '{3}', {4});", textBoxName.Text, textBoxLastName.Text, textBoxCellNumber.Text, textBoxEmail.Text, (comboBoxUserType.SelectedIndex + 1));
                         doSQL.Do_SQLQuery(doSqlQ);
+
+                        doSqlQ = @"SELECT TOP 1 tblUser.UserID FROM tblUser ORDER BY UserID DESC";
+                        doSQL.Do_SQLQuery(doSqlQ);
+                        
+                        int indexUserID = Convert.ToInt16(doSQL.dataTbl.Rows[0]["UserID"].ToString());
+
+                        doSqlQ = String.Format(@"insert into tblAuth values('{0}', '{1}', {2});", textBoxUsername.Text, textBoxPassword.Text, indexUserID);
+                        doSQL.Do_SQLQuery(doSqlQ);
+
                         MessageBox.Show( String.Format("User {0} was added successfully", textBoxName.Text));
                     }
                     catch(Exception eX)
@@ -48,23 +59,31 @@ namespace Wil
 
         private bool checkInput()
         {
-            if (textBoxName.Text.Equals(null) || textBoxName.Text.Length > 35)
+            if (textBoxName.Text.Equals("") || textBoxName.Text.Length > 35)
             {
                 return false;
             }
-            else if (textBoxLastName.Text.Equals(null) || textBoxLastName.Text.Length > 35)
+            else if (textBoxLastName.Text.Equals("") || textBoxLastName.Text.Length > 35)
             {
                 return false;
             }
-            else if (textBoxEmail.Text.Equals(null) || textBoxEmail.Text.Length > 35)
+            else if (textBoxEmail.Text.Equals("") || textBoxEmail.Text.Length > 35)
             {
                 return false;
             }
-            else if (textBoxCellNumber.Text.Equals(null) || textBoxCellNumber.Text.Length > 10)
+            else if (textBoxCellNumber.Text.Equals("") || textBoxCellNumber.Text.Length > 10)
             {
                 return false;
             }
             else if (comboBoxUserType.SelectedIndex == -1)
+            {
+                return false;
+            }
+            else if (textBoxUsername.Text.Equals("") || textBoxUsername.Text.Length > 35)
+            {
+                return false;
+            }
+            else if (textBoxPassword.Text.Equals("") || textBoxPassword.Text.Length > 35)
             {
                 return false;
             }
