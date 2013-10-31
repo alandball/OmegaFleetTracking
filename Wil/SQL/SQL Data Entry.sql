@@ -10,15 +10,15 @@ insert tblUserType values
 ('Mechanic', 'Fixes Trucks');
 
 insert tblUser values 
-('User1', 'Surename1', '0821456987', 'name@email.com', 1),
-('User2', 'Surename2', '0821456987', 'name@email.com', 2),
-('User3', 'Surename3', '0821456987', 'name@email.com', 3),
-('User4', 'Surename4', '0821456987', 'name@email.com', 4),
-('User5', 'Surename5', '0821456987', 'name@email.com', 5),
-('Driver1', 'Surename4', '0821456987', 'name@email.com', 6),
-('Driver2', 'Surename5', '0821456987', 'name@email.com', 6),
-('Mechanic1', 'Surename4', '0821456987', 'name@email.com', 7),
-('Mechanic2', 'Surename5', '0821456987', 'name@email.com', 7)
+('David', 'Mokoena', '0791358475', 'david.m@fleet.com', 1),
+('Mpho', 'Vilakazi', '0833189847', 'mpho@fleet.com', 2),
+('Sarah', 'Watson', '0821456987', 'swatson@gmail.com', 3),
+('Goodwill', 'Makathini', '0315589273', 'goodwillm@fleet.com', 4),
+('Nthombi', 'Kweyama', '0319961728', 'nkweyama@fleet.com', 5),
+('Sipho', 'Matthews', '0715846932', 's.matthews@fleet.com', 6),
+('Johnathan', 'Goodall', '0148853957', 'goodall.j@fleet.com', 6),
+('Arnold', 'Forfar', '0336529865', 'arnie@gmail.com', 7),
+('Sibinelo', 'Thuzi', '0318167193', 'sithuzi@hotmail.com', 7)
 
 insert tblAuth values 
 ('Office','office', 1),
@@ -43,21 +43,21 @@ insert tblVehicleType values
 ('Trailer')
 
 insert tblVehicle values
-('12345', '12345', 'Mini Bus', '50', 1, 3, 1),
-('12345', '12345', 'DHL Truck', '60', 1, 2, 0),
-('12345', '12345', 'Spar Truck', '46', 1, 5, 0),
-('12345', '12345', 'Cement Truck', '41', 1, 6, 0),
-('12345', '12345', '18 Wheeler', '32', 1, 7, 1),
-('12345', '12345', 'Abnormal load', '12',1, 9, 1),
-('12345', '12345', 'Trailer 1', '32', 2, 7, 0),
-('12345', '12345', 'Trailer 2', '32', 2, 9, 1),
-('43242', '23432', 'Dump truck', '344123', 1, 6, 0 )
+('NP 128461', '2893465284', 'Mini Bus', '505415', 1, 3, 1),
+('GP 543678', '4353525456', 'DHL Truck', '606724', 1, 2, 0),
+('GP 239082', '1857934123', 'Spar Truck', '461928', 1, 5, 0),
+('WP 645212', '9871235423', 'Cement Truck', '418726', 1, 6, 0),
+('GP 897321', '4452134435', '18 Wheeler', '323924', 1, 7, 1),
+('GP 324876', '5432215214', 'Abnormal load', '129182',1, 9, 1),
+('NP 543287', '1593254123', 'Trailer 1', '321379', 2, 7, 0),
+('NP 643123', '3453478237', 'Trailer 2', '322839', 2, 9, 1),
+('WP 543251', '6435189879', 'Dump truck', '344123', 1, 6, 0 )
 
 insert tblHours values
-(50, 6),
-(50, 7),
-(50, 8),
-(50, 9)
+(40, 6),
+(38, 7),
+(42, 8),
+(39, 9)
 
 insert into tblScheduleTrip values
 ('5 November 2013', '12 November 2013', 7, 'Johannesburg', 'Lumber'),
@@ -72,7 +72,6 @@ insert into tblScheduleLine values
 (8, 2),
 (9, 3),
 (2, 4)
-
 
 insert into tblIncident values
 ('Tire blowout point 12 tire 2, replaced', 2),
