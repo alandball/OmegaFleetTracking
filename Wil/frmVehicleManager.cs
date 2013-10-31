@@ -33,25 +33,30 @@ namespace Wil
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
-
-            string sVehicleType;
+            int isChecked = 0;
+            int sVehicleType;
 
             if(comboBoxTrailerOrVehicle.SelectedIndex == 0)
             {
-                sVehicleType = "0";
+                sVehicleType = 1;
             }
             else
             {
-                sVehicleType = "1";
+                sVehicleType = 2;
             }
 
-            //MessageBox.Show(comboBoxCategory.SelectedValue.ToString());('" + textBoxRegNumber.Text + "', '"+textBoxVinNumber.Text+"', '"+textBoxVehicleDesc.Text+"', '', '0', 3)");
+            if (checkBoxTrailerAttachable.Checked)
+            {
+                isChecked = 1;
+            }
 
             string sInsertVehicle = String.Format(
                     @"INSERT tblVehicle VALUES
-                    ('{0}', '{1}', '{2}', '{3}', '{4}', {5})", textBoxRegNumber.Text, textBoxVinNumber.Text, textBoxVehicleDesc.Text, textBoxVehicleKm.Text, sVehicleType, comboBoxCategory.SelectedValue);
+                    ('{0}', '{1}', '{2}', '{3}', {4}, {5}, {6})", textBoxRegNumber.Text, textBoxVinNumber.Text, textBoxVehicleDesc.Text, textBoxVehicleKm.Text, sVehicleType, comboBoxCategory.SelectedValue, isChecked);
 
            _DBAccess.Do_SQLQuery(sInsertVehicle);
+
+           MessageBox.Show("Vehicle added successfuly");
 
         }
     }

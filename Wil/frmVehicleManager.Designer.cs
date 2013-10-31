@@ -42,6 +42,7 @@
             this.buttonSubmit = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
             this.comboBoxCategory = new System.Windows.Forms.ComboBox();
+            this.checkBoxTrailerAttachable = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // comboBoxTrailerOrVehicle
@@ -74,7 +75,7 @@
             // 
             // textBoxVehicleDesc
             // 
-            this.textBoxVehicleDesc.Location = new System.Drawing.Point(272, 251);
+            this.textBoxVehicleDesc.Location = new System.Drawing.Point(272, 240);
             this.textBoxVehicleDesc.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxVehicleDesc.Multiline = true;
             this.textBoxVehicleDesc.Name = "textBoxVehicleDesc";
@@ -83,7 +84,7 @@
             // 
             // textBoxVehicleKm
             // 
-            this.textBoxVehicleKm.Location = new System.Drawing.Point(272, 398);
+            this.textBoxVehicleKm.Location = new System.Drawing.Point(272, 383);
             this.textBoxVehicleKm.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxVehicleKm.Name = "textBoxVehicleKm";
             this.textBoxVehicleKm.Size = new System.Drawing.Size(169, 20);
@@ -126,7 +127,7 @@
             // 
             this.labelVehicleDesc.AutoSize = true;
             this.labelVehicleDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVehicleDesc.Location = new System.Drawing.Point(106, 251);
+            this.labelVehicleDesc.Location = new System.Drawing.Point(106, 241);
             this.labelVehicleDesc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelVehicleDesc.Name = "labelVehicleDesc";
             this.labelVehicleDesc.Size = new System.Drawing.Size(153, 17);
@@ -137,7 +138,7 @@
             // 
             this.labelVehicleKm.AutoSize = true;
             this.labelVehicleKm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVehicleKm.Location = new System.Drawing.Point(106, 398);
+            this.labelVehicleKm.Location = new System.Drawing.Point(106, 384);
             this.labelVehicleKm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelVehicleKm.Name = "labelVehicleKm";
             this.labelVehicleKm.Size = new System.Drawing.Size(93, 17);
@@ -148,7 +149,7 @@
             // 
             this.labelCategoryID.AutoSize = true;
             this.labelCategoryID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCategoryID.Location = new System.Drawing.Point(106, 471);
+            this.labelCategoryID.Location = new System.Drawing.Point(106, 449);
             this.labelCategoryID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCategoryID.Name = "labelCategoryID";
             this.labelCategoryID.Size = new System.Drawing.Size(119, 17);
@@ -181,15 +182,27 @@
             // comboBoxCategory
             // 
             this.comboBoxCategory.FormattingEnabled = true;
-            this.comboBoxCategory.Location = new System.Drawing.Point(272, 471);
+            this.comboBoxCategory.Location = new System.Drawing.Point(272, 448);
             this.comboBoxCategory.Name = "comboBoxCategory";
             this.comboBoxCategory.Size = new System.Drawing.Size(169, 21);
             this.comboBoxCategory.TabIndex = 14;
+            // 
+            // checkBoxTrailerAttachable
+            // 
+            this.checkBoxTrailerAttachable.AutoSize = true;
+            this.checkBoxTrailerAttachable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.checkBoxTrailerAttachable.Location = new System.Drawing.Point(272, 492);
+            this.checkBoxTrailerAttachable.Name = "checkBoxTrailerAttachable";
+            this.checkBoxTrailerAttachable.Size = new System.Drawing.Size(157, 21);
+            this.checkBoxTrailerAttachable.TabIndex = 16;
+            this.checkBoxTrailerAttachable.Text = "Trailer Attachable";
+            this.checkBoxTrailerAttachable.UseVisualStyleBackColor = true;
             // 
             // frmVehicleManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.checkBoxTrailerAttachable);
             this.Controls.Add(this.comboBoxCategory);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.buttonSubmit);
@@ -229,5 +242,6 @@
         private System.Windows.Forms.Button buttonSubmit;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.ComboBox comboBoxCategory;
+        private System.Windows.Forms.CheckBox checkBoxTrailerAttachable;
     }
 }

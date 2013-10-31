@@ -61,7 +61,6 @@
             this.gridViewMechanicsTotals.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridViewMechanicsTotals.BackgroundColor = System.Drawing.SystemColors.Control;
             this.gridViewMechanicsTotals.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gridViewMechanicsTotals.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridViewMechanicsTotals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridViewMechanicsTotals.GridColor = System.Drawing.SystemColors.ControlLight;
             this.gridViewMechanicsTotals.Location = new System.Drawing.Point(59, 336);

@@ -51,10 +51,8 @@
             this.panelContainer = new System.Windows.Forms.Panel();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
-            pictureBoxHeader = new System.Windows.Forms.PictureBox();
             this.mnuMain.SuspendLayout();
             this.panelContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(pictureBoxHeader)).BeginInit();
             this.SuspendLayout();
             // 
             // mnuMain
@@ -229,24 +227,12 @@
             this.panelMenu.Size = new System.Drawing.Size(217, 656);
             this.panelMenu.TabIndex = 0;
             // 
-            // pictureBoxHeader
-            // 
-            pictureBoxHeader.BackgroundImage = global::Wil.Properties.Resources.NameLogoHeader;
-            pictureBoxHeader.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            pictureBoxHeader.Location = new System.Drawing.Point(162, 50);
-            pictureBoxHeader.Name = "pictureBoxHeader";
-            pictureBoxHeader.Size = new System.Drawing.Size(685, 140);
-            pictureBoxHeader.TabIndex = 12;
-            pictureBoxHeader.TabStop = false;
-            // 
             // FleetTracking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.AutoScrollMinSize = new System.Drawing.Size(1008, 701);
             this.ClientSize = new System.Drawing.Size(1008, 728);
-            this.Controls.Add(pictureBoxHeader);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.mnuMain);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -259,7 +245,6 @@
             this.mnuMain.ResumeLayout(false);
             this.mnuMain.PerformLayout();
             this.panelContainer.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(pictureBoxHeader)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,7 +274,6 @@
         private System.Windows.Forms.ToolStripMenuItem viewHelpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        public static System.Windows.Forms.PictureBox pictureBoxHeader;
     }
 }
 

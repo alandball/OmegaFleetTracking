@@ -25,7 +25,7 @@ namespace Wil
         public void fillGridView()
         {
             string sGetVehicles = @"
-                        SELECT VehicleReg[Registration], VehicleVinNumber[Vin Number], VehicleDesc[Description], VehicleKm[KM], VehicleTypeName[VehicleType], CatDesc[Category]
+                        SELECT VehicleReg[Registration], VehicleVinNumber[Vin Number], VehicleDesc[Description], VehicleKm[KM], VehicleTypeName[VehicleType], CatDesc[Category], VehicleTrailerAttachable[Trailer attachable]
                         FROM tblVehicle, tblCategory, tblVehicleType
                         WHERE tblVehicle.CatID = tblCategory.CatID AND tblVehicle.VehicleTypeID = tblVehicleType.VehicleTypeID
                         ";

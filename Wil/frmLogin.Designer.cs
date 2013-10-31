@@ -93,7 +93,7 @@
             // 
             // pictureBoxLogo
             // 
-            this.pictureBoxLogo.BackgroundImage = global::Wil.Properties.Resources.LogoFinal;
+            this.pictureBoxLogo.BackgroundImage = global::Wil.Properties.Resources.finalAlpha;
             this.pictureBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxLogo.Location = new System.Drawing.Point(36, 390);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
@@ -117,6 +117,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

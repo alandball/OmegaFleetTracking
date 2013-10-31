@@ -50,38 +50,56 @@ namespace Wil
             // Here is your Code for selection change
 
 
-                string sGetVehicle = String.Format(@"
-                        SELECT LTrim(RTrim(VehicleID))[VehicleID], LTrim(RTrim(VehicleReg))[VehicleReg], LTrim(RTrim(VehicleVinNumber))[VehicleVinNumber],  LTrim(RTrim(VehicleDesc))[VehicleDesc],LTrim(RTrim(VehicleKm))[VehicleKm] , LTrim(RTrim(VehicleTypeName))[VehicleTypeName], CatDesc, tblVehicle.CatID, tblVehicle.VehicleTypeID
-                        FROM tblVehicle, tblCategory, tblVehicleType
-                        WHERE tblVehicle.CatID = tblCategory.CatID AND tblVehicleType.VehicleTypeID = tblVehicle.VehicleTypeID AND tblVehicle.VehicleID = {0}
-                        ", comboBoxSeachReg.SelectedValue);
+            string sGetVehicle = String.Format(@"
+                    SELECT LTrim(RTrim(VehicleID))[VehicleID], LTrim(RTrim(VehicleReg))[VehicleReg], LTrim(RTrim(VehicleVinNumber))[VehicleVinNumber],  LTrim(RTrim(VehicleDesc))[VehicleDesc],LTrim(RTrim(VehicleKm))[VehicleKm] , LTrim(RTrim(VehicleTypeName))[VehicleTypeName], CatDesc, tblVehicle.CatID, tblVehicle.VehicleTypeID, VehicleTrailerAttachable[Trailer attachable]
+                    FROM tblVehicle, tblCategory, tblVehicleType
+                    WHERE tblVehicle.CatID = tblCategory.CatID AND tblVehicleType.VehicleTypeID = tblVehicle.VehicleTypeID AND tblVehicle.VehicleID = {0}
+                    ", comboBoxSeachReg.SelectedValue);
 
-                _DBAccess.Do_SQLQueryAlt(sGetVehicle);
+            _DBAccess.Do_SQLQueryAlt(sGetVehicle);
 
-                textBoxRegNumber.Text = _DBAccess.dataTblAlt.Rows[0]["VehicleReg"].ToString();
-                textBoxVinNumber.Text = _DBAccess.dataTblAlt.Rows[0]["VehicleVinNumber"].ToString();
-                textBoxVehDesc.Text = _DBAccess.dataTblAlt.Rows[0]["VehicleDesc"].ToString();
-                textBoxVehKM.Text = _DBAccess.dataTblAlt.Rows[0]["VehicleKm"].ToString();
-                textBoxVehCat.Text = _DBAccess.dataTblAlt.Rows[0]["CatDesc"].ToString();
+            textBoxRegNumber.Text = _DBAccess.dataTblAlt.Rows[0]["VehicleReg"].ToString();
+            textBoxVinNumber.Text = _DBAccess.dataTblAlt.Rows[0]["VehicleVinNumber"].ToString();
+            textBoxVehDesc.Text = _DBAccess.dataTblAlt.Rows[0]["VehicleDesc"].ToString();
+            textBoxVehKM.Text = _DBAccess.dataTblAlt.Rows[0]["VehicleKm"].ToString();
+            textBoxVehCat.Text = _DBAccess.dataTblAlt.Rows[0]["CatDesc"].ToString();
 
-                textBoxTruckTrailer.Text = _DBAccess.dataTblAlt.Rows[0]["VehicleTypeName"].ToString(); 
+            if (_DBAccess.dataTblAlt.Rows[0]["Trailer attachable"].ToString().Equals("True"))
+            {
+                checkBoxTrailerAttachable.Checked = true;
+            }
+            else
+            {
+                checkBoxTrailerAttachable.Checked = false;
+            }
+
+            textBoxTruckTrailer.Text = _DBAccess.dataTblAlt.Rows[0]["VehicleTypeName"].ToString(); 
         }
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
+            int isChecked = 0;
+
+            if (checkBoxTrailerAttachable.Checked)
+            {
+                isChecked = 1;
+            }
+
             string sUpdateVehicle = String.Format(
                 @"UPDATE tblVehicle
-                SET VehicleReg={0}, VehicleVinNumber={1}, VehicleDesc='{2}', VehicleKm={3}, VehicleTypeID={4}, CatID={5}
-                      WHERE tblVehicle.VehicleID = {6}
-                        ", textBoxRegNumber.Text, textBoxVinNumber.Text, textBoxVehDesc.Text.Trim(), textBoxVehKM.Text, int.Parse(_DBAccess.dataTblAlt.Rows[0]["VehicleTypeID"].ToString()), int.Parse(_DBAccess.dataTblAlt.Rows[0]["CatID"].ToString()), comboBoxSeachReg.SelectedValue);
+                SET VehicleReg={0}, VehicleVinNumber={1}, VehicleDesc='{2}', VehicleKm={3}, VehicleTypeID={4}, CatID={5}, VehicleTrailerAttachable={6}
+                      WHERE tblVehicle.VehicleID = {7}
+                        ", textBoxRegNumber.Text, textBoxVinNumber.Text, textBoxVehDesc.Text.Trim(), textBoxVehKM.Text, int.Parse(_DBAccess.dataTblAlt.Rows[0]["VehicleTypeID"].ToString()), int.Parse(_DBAccess.dataTblAlt.Rows[0]["CatID"].ToString()), isChecked, comboBoxSeachReg.SelectedValue);
 
             _DBAccess.Do_SQLQuery(sUpdateVehicle);
 
+            textBoxTruckTrailer.Clear();
             textBoxRegNumber.Clear();
             textBoxVinNumber.Clear();
             textBoxVehDesc.Clear();
             textBoxVehKM.Clear();
             textBoxVehCat.Clear();
+            checkBoxTrailerAttachable.Checked = false;
 
             fillComboBox();
         }

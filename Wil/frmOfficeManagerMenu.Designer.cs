@@ -82,7 +82,7 @@
             // 
             // pictureBoxLogo
             // 
-            this.pictureBoxLogo.BackgroundImage = global::Wil.Properties.Resources.LogoWithBackgroundNosmokesparks;
+            this.pictureBoxLogo.BackgroundImage = global::Wil.Properties.Resources.finalAlpha;
             this.pictureBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxLogo.Location = new System.Drawing.Point(37, 520);
             this.pictureBoxLogo.Name = "pictureBoxLogo";

@@ -43,6 +43,7 @@
             this.textBoxVehKM = new System.Windows.Forms.TextBox();
             this.textBoxVehCat = new System.Windows.Forms.TextBox();
             this.textBoxTruckTrailer = new System.Windows.Forms.TextBox();
+            this.checkBoxTrailerAttachable = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // labelCategoryID
@@ -187,10 +188,22 @@
             this.textBoxTruckTrailer.Size = new System.Drawing.Size(100, 20);
             this.textBoxTruckTrailer.TabIndex = 35;
             // 
+            // checkBoxTrailerAttachable
+            // 
+            this.checkBoxTrailerAttachable.AutoSize = true;
+            this.checkBoxTrailerAttachable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.checkBoxTrailerAttachable.Location = new System.Drawing.Point(126, 431);
+            this.checkBoxTrailerAttachable.Name = "checkBoxTrailerAttachable";
+            this.checkBoxTrailerAttachable.Size = new System.Drawing.Size(157, 21);
+            this.checkBoxTrailerAttachable.TabIndex = 36;
+            this.checkBoxTrailerAttachable.Text = "Trailer Attachable";
+            this.checkBoxTrailerAttachable.UseVisualStyleBackColor = true;
+            // 
             // frmVehicleManagerEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.checkBoxTrailerAttachable);
             this.Controls.Add(this.textBoxTruckTrailer);
             this.Controls.Add(this.textBoxVehCat);
             this.Controls.Add(this.textBoxVehKM);
@@ -231,5 +244,6 @@
         private System.Windows.Forms.TextBox textBoxVehKM;
         private System.Windows.Forms.TextBox textBoxVehCat;
         private System.Windows.Forms.TextBox textBoxTruckTrailer;
+        private System.Windows.Forms.CheckBox checkBoxTrailerAttachable;
     }
 }

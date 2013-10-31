@@ -60,23 +60,9 @@ namespace Wil.Properties {
             }
         }
         
-        internal static System.Drawing.Bitmap LogoFinal {
+        internal static System.Drawing.Bitmap finalAlpha {
             get {
-                object obj = ResourceManager.GetObject("LogoFinal", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap LogoWithBackgroundNosmokesparks {
-            get {
-                object obj = ResourceManager.GetObject("LogoWithBackgroundNosmokesparks", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap NameLogoHeader {
-            get {
-                object obj = ResourceManager.GetObject("NameLogoHeader", resourceCulture);
+                object obj = ResourceManager.GetObject("finalAlpha", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
