@@ -2,28 +2,29 @@ use OmegaFleetTracker
 
 insert tblUserType values 
 ('Office Manager', 'Application user management'),
-('Vehicle information administrator', 'Maintenance of vehicle record'),
+('Vehicle Information Administrator', 'Maintenance of vehicle record'),
 ('Trip Manager', 'Scheduling of vehicle trips. Recording fuel usage per trip. Recording incidents per trip'),
-('Service manager', 'Manage appointments scheduling for vechicle service. Prepare daily services job sheet'),
-('Timesheet manager', 'keeps track of the number of hours worked by drivers and mechanics'),
+('Service Manager', 'Manage appointments scheduling for vechicle service. Prepare daily services job sheet'),
+('Timesheet Manager', 'Keeps track of the number of hours worked by drivers and mechanics'),
 ('Truck Driver', 'Drives trucks'),
 ('Mechanic', 'Fixes Trucks');
 
 insert tblUser values 
-('User1', 'Surename1', '0821456987', 'name@email.com', 1),
-('User2', 'Surename2', '0821456987', 'name@email.com', 2),
-('User3', 'Surename3', '0821456987', 'name@email.com', 3),
-('User4', 'Surename4', '0821456987', 'name@email.com', 4),
-('User5', 'Surename5', '0821456987', 'name@email.com', 5),
-('Driver1', 'Surename4', '0821456987', 'name@email.com', 6),
-('Driver2', 'Surename5', '0821456987', 'name@email.com', 6),
-('Mechanic1', 'Surename4', '0821456987', 'name@email.com', 7),
-('Mechanic2', 'Surename5', '0821456987', 'name@email.com', 7)
+('Bongani', 'Smith', '0821456987', 'Smith@email.com', 1),
+('Rebecca', 'Johnson', '0821456987', 'Johnson@email.com', 2),
+('Melissa', 'Hart', '0821456987', 'Hart@email.com', 3),
+('Mark', 'Torres', '0821456987', 'Torres@email.com', 4),
+('John', 'Smith', '0821456987', 'Smith@email.com', 5),
+('Dumisane', 'Zuma', '0821456987', 'Zuma@email.com', 6),
+('Zanele', 'Nkosi', '0821456987', 'Nkosi@email.com', 6),
+('Ben', 'Montgomery', '0821456987', 'Montgomery@email.com', 7),
+('Alex', 'Harper', '0821456987', 'Harper@email.com', 7)
 
 insert tblAuth values 
 ('Office','office', 1),
 ('Vehicle','vehicle', 2),
 ('Trip','trip', 3),
+('Joe','joe', 3),
 ('Service','service', 4),
 ('Timesheet','timesheet', 5)
 
@@ -81,7 +82,7 @@ insert into tblIncident values
 
 insert into tblService values
 ('29 October 2013', '122', 9, 'Service brakes'),
-('28 October 2013', '110', 4, 'Service Cement mixer'),
+('28 October 2013', '110', 4, 'Service cement mixer'),
 ('30 October 2013', '122', 3, 'Service brakes')
 
 insert into tblPostTrip values
