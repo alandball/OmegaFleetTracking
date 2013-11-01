@@ -32,6 +32,7 @@
             this.buttonAddTrailer = new System.Windows.Forms.Button();
             this.gridViewAllVehicles = new System.Windows.Forms.DataGridView();
             this.gridViewAllTrailers = new System.Windows.Forms.DataGridView();
+            this.buttonContinue = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewAllVehicles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewAllTrailers)).BeginInit();
             this.SuspendLayout();
@@ -90,10 +91,23 @@
             this.gridViewAllTrailers.Size = new System.Drawing.Size(678, 190);
             this.gridViewAllTrailers.TabIndex = 16;
             // 
+            // buttonContinue
+            // 
+            this.buttonContinue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonContinue.Location = new System.Drawing.Point(543, 554);
+            this.buttonContinue.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonContinue.Name = "buttonContinue";
+            this.buttonContinue.Size = new System.Drawing.Size(173, 60);
+            this.buttonContinue.TabIndex = 17;
+            this.buttonContinue.Text = "Continue";
+            this.buttonContinue.UseVisualStyleBackColor = true;
+            this.buttonContinue.Click += new System.EventHandler(this.buttonContinue_Click);
+            // 
             // frmTripManagerAddVehicle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonContinue);
             this.Controls.Add(this.gridViewAllTrailers);
             this.Controls.Add(this.gridViewAllVehicles);
             this.Controls.Add(this.buttonAddTrailer);
@@ -113,6 +127,7 @@
         private System.Windows.Forms.Button buttonAddTrailer;
         private System.Windows.Forms.DataGridView gridViewAllVehicles;
         private System.Windows.Forms.DataGridView gridViewAllTrailers;
+        private System.Windows.Forms.Button buttonContinue;
 
     }
 }

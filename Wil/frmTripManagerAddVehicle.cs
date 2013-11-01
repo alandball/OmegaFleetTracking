@@ -21,6 +21,7 @@ namespace Wil
         private void frmTripManagerAddVehicle_Load(object sender, EventArgs e)
         {
             fillGridView();
+            buttonAddTrailer.Hide();
         }
 
         public void fillGridView()
@@ -45,24 +46,43 @@ namespace Wil
                         ";
 
             _DBAccess.Do_SQLQueryAlt(sGetVehicles);
-
-            gridViewAllTrailers.DataSource = _DBAccess.bndSrcAlt;
-            gridViewAllTrailers.Columns["VehicleID"].Visible = false;
-
         }
 
         private void buttonAddVehicle_Click(object sender, EventArgs e)
         {
+            if (FleetTracking._frmTripManagerSchT.vehicleID.Count == 0)
+            {
+                int rowindex = gridViewAllVehicles.CurrentCell.RowIndex; // gets the row
+                FleetTracking._frmTripManagerSchT.vehicleID.Add(gridViewAllVehicles.Rows[rowindex].Cells[0].Value.ToString());
 
-            int rowindex = gridViewAllVehicles.CurrentCell.RowIndex; // gets the row
-            int columnindex = gridViewAllVehicles.CurrentCell.ColumnIndex; // gets the column
+                gridViewAllTrailers.DataSource = _DBAccess.bndSrcAlt;
+                gridViewAllTrailers.Columns["VehicleID"].Visible = false;
 
-            MessageBox.Show(gridViewAllVehicles.Rows[rowindex].Cells[0].Value.ToString()); // gets the value in that row and column. So 1 - 1 or vehicle registration
+
+                buttonAddTrailer.Show();
+            }
+            else
+            {
+                MessageBox.Show("You have already added a truck");
+            }
         }
 
         private void buttonAddTrailer_Click(object sender, EventArgs e)
         {
+            if (FleetTracking._frmTripManagerSchT.vehicleID.Count > 0)
+            {
+                int rowindex = gridViewAllTrailers.CurrentCell.RowIndex; // gets the row
+                FleetTracking._frmTripManagerSchT.vehicleID.Add(gridViewAllTrailers.Rows[rowindex].Cells[0].Value.ToString());
+            }
+            else
+            {
+                MessageBox.Show("Please add a truck first");
+            }
+        }
 
+        private void buttonContinue_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

@@ -16,6 +16,9 @@ namespace Wil
 
         public ArrayList storeVehicle = new ArrayList();
 
+        public ArrayList vehicleID = new ArrayList();
+        public int TripID = 0;
+
         public frmTripManagerSchT()
         {
             InitializeComponent();
@@ -37,15 +40,44 @@ namespace Wil
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
-            int UserID = Convert.ToInt32(comboBoxChooseDriver.SelectedValue);
+            if (vehicleID != null)
+            {
+                
+                int UserID = Convert.ToInt32(comboBoxChooseDriver.SelectedValue);
 
-            string sQuery = @"
+                string sQuery = @"
                         INSERT tblScheduleTrip VALUES('" + datePickerDateOfDeparture.Text + "','" + datePickerDateOfArrival.Text + "'," + UserID +
-                        ",'" + textBoxDestination.Text + "','" + textBoxNotes.Text + "')";
+                            ",'" + textBoxDestination.Text + "','" + textBoxNotes.Text + "')";
 
-            _DBAccess.Do_SQLQuery(sQuery);
+                _DBAccess.Do_SQLQuery(sQuery);
 
-            buttonClear_Click((object)sender, (EventArgs)e);
+                sQuery = @"SELECT TOP 1 TripID FROM tblScheduleTrip ORDER BY TripID DESC;";
+
+                _DBAccess.Do_SQLQuery(sQuery);
+
+                int lastTripID = Convert.ToInt16(_DBAccess.dataTbl.Rows[0]["TripID"].ToString());
+                
+                sQuery = @"
+                        INSERT tblScheduleLine VALUES(" + Convert.ToInt32(vehicleID[0]) + "," + lastTripID + ")";
+
+                _DBAccess.Do_SQLQuery(sQuery);
+
+                if (vehicleID.Count > 1)
+                {
+                    for (int indexVehicleID = 1; indexVehicleID < vehicleID.Count; indexVehicleID++)
+                    {
+                        sQuery = @"
+                        INSERT tblScheduleLine VALUES(" + Convert.ToInt32(vehicleID[indexVehicleID]) + "," + lastTripID + ")";
+                        _DBAccess.Do_SQLQuery(sQuery);
+                    }
+                }
+
+                buttonClear_Click((object)sender, (EventArgs)e);
+            }
+            else
+            {
+                MessageBox.Show("Please add at least one vehicle");
+            }
         }
 
         private void buttonClear_Click(object sender, EventArgs e)
